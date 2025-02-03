@@ -47,7 +47,7 @@ const menuitems = [
                   <a
                     href={item.path}
                     class={` ${index}
-                        ${Astro.url.pathname === '/' ? 'ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10' : 'ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10'}
+                        ${Astro.url.pathname === '/' ? 'ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:opacity-70 xl:ml-10' : 'ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 xl:ml-10'}
                         `}
                   >
                     {item.title}
@@ -62,13 +62,13 @@ const menuitems = [
         <ul class="flex">
           <a
             href="/submission"
-            class={`${Astro.url.pathname === '/' ? 'loginBtn py-2 px-[22px] text-base font-medium text-white hover:opacity-70' : 'loginBtn py-2 px-[22px] text-base font-medium text-dark dark:text-white hover:opacity-70'}`}
+            class="loginBtn px-[22px] py-2 text-base font-medium text-dark hover:opacity-70"
           >
             Submission
           </a>
           <a
             href="/registration"
-            class={`${Astro.url.pathname === '/' ? 'signUpBtn rounded-md bg-white bg-opacity-20 py-2 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark' : 'registrationBtn rounded-md bg-primary py-2 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-blue-dark'}`}
+            class="registrationBtn hover:bg-primary-light rounded-md bg-primary px-6 py-2 text-base font-medium text-white duration-300 ease-in-out"
           >
             Registration
           </a>
