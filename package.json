@@ -1,7 +1,7 @@
 {
-  "name": "play-astro",
+  "name": "agle-2025",
   "type": "module",
-  "version": "1.0",
+  "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
