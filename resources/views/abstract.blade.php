@@ -1,6 +1,6 @@
 <x-layout>
     <x-breadcrumb>
-        Contact
+        Abstract
     </x-breadcrumb>
 
     <section class="py-20 bg-gray-1">

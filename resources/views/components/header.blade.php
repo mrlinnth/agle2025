@@ -39,8 +39,16 @@
             ],
         ],
         [
-            'title' => 'Call for Papers',
-            'path' => '/paper',
+            'title' => 'Committee',
+            'path' => '/committee',
+        ],
+        [
+            'title' => 'Abstract Submission',
+            'path' => '/abstract',
+        ],
+        [
+            'title' => 'Registration',
+            'path' => '/registration',
         ],
         [
             'title' => 'Contact',
@@ -59,8 +67,9 @@
                 </a>
             </div>
 
-            <div class="hidden lg:block">
-                <nav aria-label="Global">
+
+            <div class="flex items-center gap-4">
+                <nav aria-label="Global" class="hidden lg:flex">
                     <ul class="flex items-center gap-6 text-sm">
                         @foreach ($menuItems as $item)
                             @isset($item['subMenu'])
@@ -94,19 +103,6 @@
                         @endforeach
                     </ul>
                 </nav>
-            </div>
-
-            <div class="flex items-center gap-4">
-                <div class="sm:flex sm:gap-4">
-                    <div class="hidden lg:flex">
-                        <a class="btn-secondary" href="/submission">
-                            Submission
-                        </a>
-                    </div>
-                    <a class="btn-primary" href="/registration">
-                        Registration
-                    </a>
-                </div>
 
                 <div class="block lg:hidden">
                     <div class=" relative inline-block text-left dropdown">
@@ -127,12 +123,6 @@
                                             role="menuitem" href="{{ $item['path'] }}">
                                             {{ $item['title'] }} </a>
                                     @endforeach
-                                </div>
-                                <div class="py-1">
-                                    <a class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left hover:text-primary font-medium"
-                                        href="/submission">
-                                        Submission
-                                    </a>
                                 </div>
                             </div>
                         </div>
