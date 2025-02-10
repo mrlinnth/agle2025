@@ -46,6 +46,7 @@
                 <li class="group relative">
                   <a
                     href="{{$item['path']}}"
+                    class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 xl:ml-10"
                   >
                     {{$item['title']}}
                   </a>
@@ -58,7 +59,7 @@
         <ul class="flex">
           <a
             href="/submission"
-            class="loginBtn px-[22px] py-2 text-base font-medium text-dark hover:opacity-70"
+            class="loginBtn px-[22px] py-2 text-base font-medium text-dark hover:text-primary"
           >
             Submission
           </a>
