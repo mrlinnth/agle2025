@@ -7,6 +7,36 @@
         [
             'title' => 'About',
             'path' => '/about',
+            'subMenu' => [
+                [
+                    'title' => 'Conference Details',
+                    'path' => '/about#conference-details',
+                ],
+                [
+                    'title' => 'Agenda',
+                    'path' => '/about#agenda',
+                ],
+                [
+                    'title' => 'Conference Theme',
+                    'path' => '/about#conference-theme',
+                ],
+                [
+                    'title' => 'Keynote Speakers',
+                    'path' => '/about#keynote-speakers',
+                ],
+                [
+                    'title' => 'Field Trip Details',
+                    'path' => '/about#field-trip-details',
+                ],
+                [
+                    'title' => 'Why Join',
+                    'path' => '/about#why-join',
+                ],
+                [
+                    'title' => 'Partners & Sponsors',
+                    'path' => '/about#partners-sponsors',
+                ],
+            ],
         ],
         [
             'title' => 'Call for Papers',
@@ -29,15 +59,38 @@
                 </a>
             </div>
 
-            <div class="hidden md:block">
+            <div class="hidden lg:block">
                 <nav aria-label="Global">
                     <ul class="flex items-center gap-6 text-sm">
                         @foreach ($menuItems as $item)
-                            <li>
-                                <a class="font-medium text-base transition hover:text-primary"
-                                    href="{{ $item['path'] }}">
-                                    {{ $item['title'] }} </a>
-                            </li>
+                            @isset($item['subMenu'])
+                                <li class="dropdown">
+                                    <a class="font-medium text-base transition hover:text-primary" href="#">
+                                        {{ $item['title'] }} </a>
+                                    <div
+                                        class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                                        <div class="absolute left-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                                            aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117"
+                                            role="menu">
+                                            <div class="py-1">
+                                                @foreach ($item['subMenu'] as $subItem)
+                                                    <a class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left hover:text-primary"
+                                                        role="menuitem" href="{{ $subItem['path'] }}">
+                                                        {{ $subItem['title'] }} </a>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            @endisset
+
+                            @empty($item['subMenu'])
+                                <li>
+                                    <a class="font-medium text-base transition hover:text-primary"
+                                        href="{{ $item['path'] }}">
+                                        {{ $item['title'] }} </a>
+                                </li>
+                            @endempty
                         @endforeach
                     </ul>
                 </nav>
@@ -45,19 +98,17 @@
 
             <div class="flex items-center gap-4">
                 <div class="sm:flex sm:gap-4">
-                    <div class="hidden sm:flex">
-                        <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-primary"
-                            href="/submission">
+                    <div class="hidden lg:flex">
+                        <a class="btn-secondary" href="/submission">
                             Submission
                         </a>
                     </div>
-                    <a class="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm"
-                        href="/registration">
+                    <a class="btn-primary" href="/registration">
                         Registration
                     </a>
                 </div>
 
-                <div class="block md:hidden">
+                <div class="block lg:hidden">
                     <div class=" relative inline-block text-left dropdown">
                         <button class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
                             <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
