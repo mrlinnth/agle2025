@@ -3,7 +3,7 @@
     'discounts' => ['Researchers from Global South: $250', 'Students: $200', 'Others: $300'],
 ])
 
-<section id="fee" class="bg-gray-100 py-20">
+<section id="fee" class="py-20">
     <div class="container">
         <div class="grid place-items-center">
             <div class="m-auto flex w-full flex-col items-center gap-4 text-center">
