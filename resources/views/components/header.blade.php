@@ -10,31 +10,31 @@
             'subMenu' => [
                 [
                     'title' => 'Conference Details',
-                    'path' => '/about#conference-details',
+                    'path' => '/about#details',
                 ],
                 [
-                    'title' => 'Agenda',
-                    'path' => '/about#agenda',
+                    'title' => 'Location',
+                    'path' => '/about#location',
                 ],
                 [
-                    'title' => 'Conference Theme',
-                    'path' => '/about#conference-theme',
+                    'title' => 'Field Trip',
+                    'path' => '/about#field-trip',
                 ],
                 [
-                    'title' => 'Keynote Speakers',
-                    'path' => '/about#keynote-speakers',
+                    'title' => 'Abstract Submission',
+                    'path' => '/about#abstract',
                 ],
                 [
-                    'title' => 'Field Trip Details',
-                    'path' => '/about#field-trip-details',
+                    'title' => 'Publication Option',
+                    'path' => '/about#publication',
                 ],
                 [
-                    'title' => 'Why Join',
-                    'path' => '/about#why-join',
+                    'title' => 'Registration Deadline',
+                    'path' => '/about#deadline',
                 ],
                 [
-                    'title' => 'Partners & Sponsors',
-                    'path' => '/about#partners-sponsors',
+                    'title' => 'Registration Fee',
+                    'path' => '/about#fee',
                 ],
             ],
         ],
