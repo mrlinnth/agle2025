@@ -5,72 +5,90 @@
             'path' => '/',
         ],
         [
-            'title' => 'About Us',
+            'title' => 'About',
             'path' => '/about',
         ],
         [
-            'title' => 'Services',
-            'path' => '/services',
+            'title' => 'Call for Papers',
+            'path' => '/paper',
         ],
         [
-            'title' => 'Contact Us',
+            'title' => 'Contact',
             'path' => '/contact',
         ],
-    ]
+    ],
 ])
 
 
-<header class="ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent">
-  <div class="container">
-    <div class="relative -mx-4 flex items-center justify-between">
-      <div class="w-60 max-w-full px-4">
-        <a href="/" class="navbar-logo block w-full py-5">
-          <img src="/assets/logo/agle-logo.jpeg" alt="logo" class="header-logo w-2/3" />
-        </a>
-      </div>
-      <div>
-        <button
-          id="navbarToggler"
-          class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
-        >
-          <span class="relative my-[6px] block h-[2px] w-[30px] bg-dark dark:bg-white"></span>
-          <span class="relative my-[6px] block h-[2px] w-[30px] bg-dark dark:bg-white"></span>
-          <span class="relative my-[6px] block h-[2px] w-[30px] bg-dark dark:bg-white"></span>
-        </button>
-        <nav
-          id="navbarCollapse"
-          class="w-full rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-4 2xl:px-6"
-        >
-          <ul class="flex">
-            @foreach ($menuItems as $item)
-                <li class="group relative">
-                  <a
-                    href="{{$item['path']}}"
-                    class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 xl:ml-10"
-                  >
-                    {{$item['title']}}
-                  </a>
-                </li>
-            @endforeach
-          </ul>
-        </nav>
-      </div>
-      <div class="flex items-center justify-end pr-16 lg:pr-0">
-        <ul class="flex">
-          <a
-            href="/submission"
-            class="loginBtn px-[22px] py-2 text-base font-medium text-dark hover:text-primary"
-          >
-            Submission
-          </a>
-          <a
-            href="/registration"
-            class="registrationBtn hover:bg-primary-light rounded-md bg-primary px-6 py-2 text-base font-medium text-white duration-300 ease-in-out"
-          >
-            Registration
-          </a>
-        </ul>
-      </div>
+<header class="ud-header fixed top-0 left-0 right-0 z-50">
+    <div class="container">
+        <div class="flex h-24 items-center justify-between">
+            <div class="md:flex md:items-center md:gap-12">
+                <a class="block" href="/">
+                    <img src="/assets/logo/agle-logo.jpeg" alt="logo" class="header-logo w-2/5" />
+                </a>
+            </div>
+
+            <div class="hidden md:block">
+                <nav aria-label="Global">
+                    <ul class="flex items-center gap-6 text-sm">
+                        @foreach ($menuItems as $item)
+                            <li>
+                                <a class="font-medium text-base transition hover:text-primary"
+                                    href="{{ $item['path'] }}">
+                                    {{ $item['title'] }} </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="sm:flex sm:gap-4">
+                    <div class="hidden sm:flex">
+                        <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-primary"
+                            href="/submission">
+                            Submission
+                        </a>
+                    </div>
+                    <a class="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm"
+                        href="/registration">
+                        Registration
+                    </a>
+                </div>
+
+                <div class="block md:hidden">
+                    <div class=" relative inline-block text-left dropdown">
+                        <button class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                        <div
+                            class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                            <div class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                                aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117"
+                                role="menu">
+                                <div class="py-1">
+                                    @foreach ($menuItems as $item)
+                                        <a class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left hover:text-primary"
+                                            role="menuitem" href="{{ $item['path'] }}">
+                                            {{ $item['title'] }} </a>
+                                    @endforeach
+                                </div>
+                                <div class="py-1">
+                                    <a class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left hover:text-primary font-medium"
+                                        href="/submission">
+                                        Submission
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    </div>
 </header>

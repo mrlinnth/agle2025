@@ -31,6 +31,7 @@ class HomeController extends Controller
                 'name' => 'Chinese',
             ],
         ];
+
         return view('home', compact('clients'));
     }
 }
