@@ -34,9 +34,12 @@
                 </div>
             </div>
 
-            <h4 class="pb-4 text-3xl shadow-lg leading-snug sm:leading-snug lg:leading-[1.2] text-center text-white">
+            <h4 class="pb-2 text-3xl leading-snug sm:leading-snug lg:leading-[1.2] text-center text-white">
                 Publication Opportunity
             </h4>
+            <p class="pb-4 text-xl leading-snug sm:leading-snug lg:leading-[1.2] text-center text-white">
+                Collaboration with “Journal of Rural Studies” and “Research in Globalization”
+            </p>
         </div>
     </section>
 
