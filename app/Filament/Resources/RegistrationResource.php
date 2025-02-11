@@ -2,9 +2,11 @@
 
 namespace App\Filament\Resources;
 
+use App\Enums\StatusEnum;
 use App\Filament\Resources\RegistrationResource\Pages;
 use App\Models\Registration;
 use Filament\Forms;
+use Filament\Forms\Components\Grid;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -21,42 +23,55 @@ class RegistrationResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('institution')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('email')
-                    ->email()
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('phone')
-                    ->tel()
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('role')
-                    ->required()
-                    ->maxLength(255),
-                Forms\Components\FileUpload::make('payment')
-                    ->disk('local')
-                    ->directory('payments')
-                    ->visibility('private')
-                    ->downloadable()
-                    ->deletable(false)
-                    ->required(),
-                Forms\Components\TextInput::make('pax')
-                    ->required()
-                    ->numeric()
-                    ->default(1),
-                Forms\Components\TextInput::make('status')
-                    ->required()
-                    ->maxLength(255)
-                    ->default('pending'),
-                Forms\Components\TextInput::make('reference')
-                    ->readOnly(),
-                // Forms\Components\Toggle::make('is_edited')
-                //     ->disabled(),
+                Grid::make(1)->schema([
+                    Forms\Components\TextInput::make('name')
+                        ->required()
+                        ->maxLength(255),
+                    Forms\Components\TextInput::make('email')
+                        ->email()
+                        ->required()
+                        ->maxLength(255),
+                    Forms\Components\TextInput::make('position')
+                        ->required()
+                        ->maxLength(255),
+                    Forms\Components\TextInput::make('student_id')
+                        ->maxLength(255),
+                    Forms\Components\TextInput::make('institution')
+                        ->required()
+                        ->maxLength(255),
+                    Forms\Components\TextInput::make('country')
+                        ->required()
+                        ->maxLength(255),
+                    Forms\Components\Toggle::make('has_paper'),
+                    Forms\Components\TextInput::make('author_type')
+                        ->maxLength(255),
+                    Forms\Components\TextInput::make('paper_title')
+                        ->maxLength(255),
+                    Forms\Components\Toggle::make('join_trip'),
+                    Forms\Components\Toggle::make('join_dinner'),
+                    Forms\Components\TextInput::make('participation_option')
+                        ->maxLength(255),
+                    Forms\Components\FileUpload::make('payment')
+                        ->disk('local')
+                        ->directory('payments')
+                        ->visibility('private')
+                        ->downloadable()
+                        ->deletable(false)
+                        ->required(),
+                    // Forms\Components\TextInput::make('pax')
+                    //     ->required()
+                    //     ->numeric()
+                    //     ->default(1),
+                    Forms\Components\TextInput::make('status')
+                        ->required()
+                        ->maxLength(255)
+                        ->default('pending'),
+                    Forms\Components\TextInput::make('reference')
+                        ->readOnly(),
+                    // Forms\Components\Toggle::make('is_edited')
+                    //     ->disabled(),
+
+                ]),
             ]);
     }
 
@@ -67,17 +82,28 @@ class RegistrationResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
+                Tables\Columns\TextColumn::make('email'),
+                Tables\Columns\TextColumn::make('position')->sortable(),
                 Tables\Columns\TextColumn::make('institution')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('email'),
-                Tables\Columns\TextColumn::make('phone'),
-                Tables\Columns\TextColumn::make('role')->sortable(),
+                Tables\Columns\IconColumn::make('has_paper')
+                    ->boolean(),
+                Tables\Columns\IconColumn::make('join_trip')
+                    ->boolean(),
+                Tables\Columns\IconColumn::make('join_dinner')
+                    ->boolean(),
                 Tables\Columns\ImageColumn::make('payment')->disk('local')->visibility('private'),
-                Tables\Columns\TextColumn::make('pax')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('status')
-                    ->searchable()
+                // Tables\Columns\TextColumn::make('pax')
+                //     ->numeric()
+                //     ->sortable(),
+                Tables\Columns\SelectColumn::make('status')
+                    ->options([
+                        StatusEnum::PENDING->value => StatusEnum::PENDING->value,
+                        StatusEnum::APPROVED->value => StatusEnum::APPROVED->value,
+                        StatusEnum::CONFIRMED->value => StatusEnum::CONFIRMED->value,
+                        StatusEnum::REJECTED->value => StatusEnum::REJECTED->value,
+                        StatusEnum::CANCELED->value => StatusEnum::CANCELED->value,
+                    ])
                     ->sortable(),
                 // Tables\Columns\TextColumn::make('reference')
                 //     ->searchable(),
@@ -97,7 +123,7 @@ class RegistrationResource extends Resource
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
-                Tables\Actions\EditAction::make(),
+                // Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
                 // Tables\Actions\BulkActionGroup::make([
