@@ -5,15 +5,21 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreRegistrationRequest;
 use App\Http\Requests\UpdateRegistrationRequest;
 use App\Models\Registration;
+use Illuminate\Support\Facades\Storage;
 
 class RegistrationController extends Controller
 {
     /**
      * Show the specified resource.
      */
-    public function show(Registration $registration)
+    public function show(string $reference)
     {
-        dd($registration);
+        $registration = Registration::where('reference', $reference)->firstOrFail();
+        $file = Storage::temporaryUrl(
+            $registration->payment,
+            now()->addMinutes(3)
+        );
+        return view('registration', compact('registration', 'file'));
     }
 
     /**
@@ -21,14 +27,12 @@ class RegistrationController extends Controller
      */
     public function store(StoreRegistrationRequest $request)
     {
-        // dd($request->all());
-
         $path = $request->upload->store('payments');
+        $data = array_merge($request->validated(), ['payment' => $path, 'reference' => uniqid()]);
+        // dd($data);
+        $registration = Registration::create($data);
 
-        $registration = Registration::create($request->validated());
-        $registration->update(['payment' => $path]);
-
-        return redirect()->route('registrations.show', ['registration' => $registration]);
+        return redirect()->route('registrations.show', ['reference' => $registration->reference]);
     }
 
     /**

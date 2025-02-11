@@ -17,5 +17,7 @@ Route::get('/abstract', AbstractController::class)->name('abstract');
 Route::get('/register', RegisterController::class)->name('register');
 Route::get('/contact', ContactController::class)->name('contact');
 
-Route::resource('/submissions', SubmissionController::class)->only(['show', 'store', 'edit', 'update']);
-Route::resource('/registrations', RegistrationController::class)->only(['show', 'store', 'edit', 'update']);
+Route::get('/submissions/{reference}', [SubmissionController::class, 'show'])->name('submissions.show');
+Route::resource('/submissions', SubmissionController::class)->only(['store', 'edit', 'update']);
+Route::get('/registrations/{reference}', [RegistrationController::class, 'show'])->name('registrations.show');
+Route::resource('/registrations', RegistrationController::class)->only(['store', 'edit', 'update']);

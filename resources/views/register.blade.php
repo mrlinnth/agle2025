@@ -3,6 +3,18 @@
         Registration
     </x-breadcrumb>
 
+    @if ($errors->any())
+        <div role="alert" class="rounded-sm border-s-4 border-red-500 bg-red-50 p-4">
+            <strong class="block font-medium text-red-800">Form submission error</strong>
+
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <section class="py-20 bg-gray-1">
         <div class="container">
             <div class="m-auto flex w-full flex-col items-center gap-2 text-center">
@@ -90,37 +102,39 @@
                 </div>
 
                 <div class="rounded-lg bg-white p-8 shadow-lg">
-                    <form method="POST" action="{{ route('registrations.store') }}" class="space-y-4">
+                    <form method="POST" action="{{ route('registrations.store') }}" enctype="multipart/form-data"
+                        class="space-y-4">
                         @csrf
                         <h2 class="mb-2 font-bold">Personal Information</h2>
                         <div>
                             <label class="sr-only" for="name">Name</label>
-                            <input class="input-box" placeholder="Name" type="text" name="name" id="name" />
+                            <input class="input-box" placeholder="Name" type="text" name="name" id="name"
+                                required />
                         </div>
                         <div>
                             <label class="sr-only" for="institution">Institution</label>
                             <input class="input-box" placeholder="Institution" type="text" name="institution"
-                                id="institution" />
+                                id="institution" required />
                         </div>
 
                         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <div>
                                 <label class="sr-only" for="email">Email</label>
                                 <input class="input-box" placeholder="Email" type="email" name="email"
-                                    id="email" />
+                                    id="email" required />
                             </div>
 
                             <div>
                                 <label class="sr-only" for="phone">Contact</label>
                                 <input class="input-box" placeholder="Contact Number" type="text" name="phone"
-                                    id="phone" />
+                                    id="phone" required />
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <div>
                                 <label class="sr-only" for="role">Role</label>
-                                <select name="role" id="role" class="input-box">
+                                <select name="role" id="role" class="input-box" required>
                                     <option value="">Select Role</option>
                                     <option value="student">Student</option>
                                     <option value="faculty">Faculty</option>
@@ -131,7 +145,7 @@
                             <div>
                                 <label class="sr-only" for="pax">Number of people</label>
                                 <input class="input-box" placeholder="Number of people" type="number" name="pax"
-                                    id="pax" max="10" min="1" />
+                                    id="pax" max="10" min="1" required />
                             </div>
                         </div>
 
@@ -160,7 +174,7 @@
                                 </span>
                                 <input name="upload" id="upload" type="file" class="sr-only" />
                             </label> --}}
-                            <input class="input-box" name="upload" id="upload" type="file" />
+                            <input class="input-box" name="upload" id="upload" type="file" required />
                         </div>
 
                         <div class="mt-4">
