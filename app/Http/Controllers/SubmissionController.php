@@ -28,7 +28,7 @@ class SubmissionController extends Controller
     public function store(StoreSubmissionRequest $request)
     {
         $path = $request->upload->store('papers');
-        $data = array_merge($validated = $request->safe()->except(['upload']), ['file' => $path, 'reference' => uniqid()]);
+        $data = array_merge($request->safe()->except(['upload']), ['file' => $path, 'reference' => uniqid()]);
         $submission = Submission::create($data);
 
         return redirect()->route('submissions.show', ['reference' => $submission->reference]);

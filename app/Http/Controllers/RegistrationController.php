@@ -28,7 +28,7 @@ class RegistrationController extends Controller
     public function store(StoreRegistrationRequest $request)
     {
         $path = $request->upload->store('payments');
-        $data = array_merge($request->validated(), ['payment' => $path, 'reference' => uniqid()]);
+        $data = array_merge($request->safe()->except(['upload']), ['payment' => $path, 'reference' => uniqid()]);
         $registration = Registration::create($data);
 
         return redirect()->route('registrations.show', ['reference' => $registration->reference]);
