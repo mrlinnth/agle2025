@@ -29,7 +29,6 @@ class RegistrationController extends Controller
     {
         $path = $request->upload->store('payments');
         $data = array_merge($request->validated(), ['payment' => $path, 'reference' => uniqid()]);
-        // dd($data);
         $registration = Registration::create($data);
 
         return redirect()->route('registrations.show', ['reference' => $registration->reference]);

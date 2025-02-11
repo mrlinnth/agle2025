@@ -5,15 +5,21 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreSubmissionRequest;
 use App\Http\Requests\UpdateSubmissionRequest;
 use App\Models\Submission;
+use Illuminate\Support\Facades\Storage;
 
 class SubmissionController extends Controller
 {
     /**
      * Show the specified resource.
      */
-    public function show(Submission $submission)
+    public function show(string $reference)
     {
-        dd($submission);
+        $submission = Submission::where('reference', $reference)->firstOrFail();
+        $file = Storage::temporaryUrl(
+            $submission->file,
+            now()->addMinutes(3)
+        );
+        return view('submission', compact('submission', 'file'));
     }
 
     /**
@@ -21,9 +27,11 @@ class SubmissionController extends Controller
      */
     public function store(StoreSubmissionRequest $request)
     {
-        $submission = Submission::create($request->validated());
+        $path = $request->upload->store('papers');
+        $data = array_merge($validated = $request->safe()->except(['upload']), ['file' => $path, 'reference' => uniqid()]);
+        $submission = Submission::create($data);
 
-        return redirect()->route('submissions.show', ['submission' => $submission]);
+        return redirect()->route('submissions.show', ['reference' => $submission->reference]);
     }
 
     /**

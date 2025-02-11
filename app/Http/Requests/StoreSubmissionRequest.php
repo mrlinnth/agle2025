@@ -22,7 +22,14 @@ class StoreSubmissionRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => ['required', 'string', 'max:255'],
+            'institution' => ['required', 'string', 'max:255'],
+            'country' => ['required', 'string', 'max:255'],
+            'phone' => ['required', 'string', 'max:255'],
+            'abstract' => ['required', 'string', 'max:255'],
+            'title' => ['required', 'string', 'max:255'],
+            'keywords' => ['required', 'string', 'max:255'],
+            'upload' => ['required', 'file', 'mimes:pdf', 'max:2048'],
         ];
     }
 }

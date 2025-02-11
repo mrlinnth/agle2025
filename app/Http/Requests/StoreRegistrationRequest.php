@@ -28,6 +28,7 @@ class StoreRegistrationRequest extends FormRequest
             'phone' => ['required', 'string', 'max:255'],
             'role' => ['required', 'string', 'max:255'],
             'pax' => ['required', 'integer'],
+            'upload' => ['required', 'file', 'mimes:pdf,jpg,png', 'max:2048'],
         ];
     }
 }
