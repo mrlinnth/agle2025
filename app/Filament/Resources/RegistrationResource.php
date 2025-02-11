@@ -9,6 +9,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
 
 class RegistrationResource extends Resource
 {
@@ -100,9 +101,10 @@ class RegistrationResource extends Resource
                 Tables\Actions\EditAction::make(),
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
+                // Tables\Actions\BulkActionGroup::make([
+                //     Tables\Actions\DeleteBulkAction::make(),
+                // ]),
+                ExportBulkAction::make(),
             ]);
     }
 
