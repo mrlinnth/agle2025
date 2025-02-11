@@ -19,6 +19,7 @@ class RegistrationController extends Controller
             $registration->payment,
             now()->addMinutes(3)
         );
+
         return view('registration', compact('registration', 'file'));
     }
 

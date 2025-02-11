@@ -19,6 +19,7 @@ class SubmissionController extends Controller
             $submission->file,
             now()->addMinutes(3)
         );
+
         return view('submission', compact('submission', 'file'));
     }
 

@@ -12,7 +12,7 @@ class SubmissionPolicy
      */
     public function viewAny(User $user): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -20,7 +20,7 @@ class SubmissionPolicy
      */
     public function view(User $user, Submission $submission): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -36,7 +36,7 @@ class SubmissionPolicy
      */
     public function update(User $user, Submission $submission): bool
     {
-        return false;
+        return true;
     }
 
     /**
