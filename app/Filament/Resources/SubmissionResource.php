@@ -54,11 +54,10 @@ class SubmissionResource extends Resource
                     ->required()
                     ->maxLength(255)
                     ->default('pending'),
-                // Forms\Components\TextInput::make('reference')
-                //     ->required()
-                //     ->maxLength(255),
+                Forms\Components\TextInput::make('reference')
+                    ->readOnly(),
                 // Forms\Components\Toggle::make('is_edited')
-                //     ->required(),
+                //     ->disabled(),
             ]);
     }
 
