@@ -1,6 +1,5 @@
 <?php
 
-use App\Enums\PositionEnum;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AbstractController;
 use App\Http\Controllers\CommitteeController;
@@ -24,6 +23,6 @@ Route::get('/registrations/{reference}', [RegistrationController::class, 'show']
 Route::resource('/registrations', RegistrationController::class)->only(['store', 'edit', 'update']);
 
 Route::get('/playground', function () {
-    $data = array_column(PositionEnum::cases(), 'value');
+    $data = countries();
     dd($data);
 });

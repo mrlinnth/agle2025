@@ -1,6 +1,6 @@
 @props([
-    'pricings' => ['Researchers from Global South: $350', 'Students: $250', 'Others: $400'],
-    'discounts' => ['Researchers from Global South: $250', 'Students: $200', 'Others: $300'],
+    'pricings' => ['Researchers from Global South: $350', 'Students from Global South: $170', 'Others: $250'],
+    'discounts' => ['Researchers from Global South: $250', 'Students from Global South: $150', 'Others: $200'],
 ])
 
 <section id="fee" class="py-20">

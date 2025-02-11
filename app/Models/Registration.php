@@ -21,7 +21,6 @@ class Registration extends Model
         return [
             'position' => PositionEnum::class,
             'author_type' => AuthorTypeEnum::class,
-            'participation_options' => 'array',
             'status' => StatusEnum::class,
         ];
     }

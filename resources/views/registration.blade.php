@@ -18,30 +18,58 @@
                     </div>
 
                     <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
-                        <dt class="font-medium">Institution</dt>
-                        <dd class="md:col-span-2">{{ $registration->institution }}</dd>
-                    </div>
-
-                    <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
                         <dt class="font-medium">Email</dt>
                         <dd class="md:col-span-2">{{ $registration->email }}</dd>
                     </div>
 
                     <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
-                        <dt class="font-medium">Contact</dt>
-                        <dd class="md:col-span-2">{{ $registration->phone }}</dd>
+                        <dt class="font-medium">Position</dt>
+                        <dd class="md:col-span-2">{{ $registration->position }}</dd>
                     </div>
 
                     <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
-                        <dt class="font-medium">Role</dt>
-                        <dd class="md:col-span-2">
-                            {{ $registration->role }}
-                        </dd>
+                        <dt class="font-medium">Student ID</dt>
+                        <dd class="md:col-span-2">{{ $registration->student_id }}</dd>
                     </div>
 
                     <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
-                        <dt class="font-medium">Number of People</dt>
-                        <dd class="md:col-span-2">{{ $registration->pax }}</dd>
+                        <dt class="font-medium">Institution</dt>
+                        <dd class="md:col-span-2">{{ $registration->institution }}</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
+                        <dt class="font-medium">Country</dt>
+                        <dd class="md:col-span-2">{{ $registration->country }}</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
+                        <dt class="font-medium">Submit Abstract</dt>
+                        <dd class="md:col-span-2">{{ $registration->has_paper ? 'Yes' : 'No' }}</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
+                        <dt class="font-medium">Authoer Type</dt>
+                        <dd class="md:col-span-2">{{ $registration->author_type }}</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
+                        <dt class="font-medium">Abstract Title</dt>
+                        <dd class="md:col-span-2">{{ $registration->paper_title }}</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
+                        <dt class="font-medium">Join Field Trip</dt>
+                        <dd class="md:col-span-2">{{ $registration->join_trip ? 'Yes' : 'No' }}</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
+                        <dt class="font-medium">Join Gala Dinner</dt>
+                        <dd class="md:col-span-2">{{ $registration->join_dinner ? 'Yes' : 'No' }}</dd>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">
+                        <dt class="font-medium">Participate in</dt>
+                        <dd class="md:col-span-2">{{ $registration->participation_option }}</dd>
                     </div>
 
                     <div class="grid grid-cols-1 gap-1 py-3 md:grid-cols-3 md:gap-4">

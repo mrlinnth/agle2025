@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string('paper_title')->nullable();
             $table->boolean('join_trip')->default(false);
             $table->boolean('join_dinner')->default(false);
-            $table->json('participation_options');
+            $table->string('participation_option');
             $table->string('payment');
             $table->integer('pax')->default(1); // e.g. 1, 2, 3, etc.
             $table->enum('status', array_column(StatusEnum::cases(), 'value'))->default(StatusEnum::PENDING->value);
