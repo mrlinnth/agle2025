@@ -45,38 +45,43 @@
                     <form action="#" class="space-y-4">
                         <div>
                             <label class="sr-only" for="name">Name</label>
-                            <input class="input-box" placeholder="Name" type="text" id="name" />
+                            <input class="input-box" placeholder="Name" type="text" name="name" id="name" />
                         </div>
                         <div>
                             <label class="sr-only" for="institution">Institution</label>
-                            <input class="input-box" placeholder="Institution" type="text" id="institution" />
+                            <input class="input-box" placeholder="Institution" type="text" name="institution"
+                                id="institution" />
                         </div>
 
                         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <div>
                                 <label class="sr-only" for="country">Country</label>
-                                <input class="input-box" placeholder="Country" type="text" id="country" />
+                                <input class="input-box" placeholder="Country" type="text" name="country"
+                                    id="country" />
                             </div>
 
                             <div>
                                 <label class="sr-only" for="phone">Contact</label>
-                                <input class="input-box" placeholder="Contact Number" type="tel" id="phone" />
+                                <input class="input-box" placeholder="Contact Number" type="text" name="phone"
+                                    id="phone" />
                             </div>
                         </div>
 
                         <div>
-                            <label class="sr-only" for="message">Abstract</label>
+                            <label class="sr-only" for="abstract">Abstract</label>
 
-                            <textarea class="input-box" placeholder="Paper Abstract" rows="8" id="message"></textarea>
+                            <textarea class="input-box" placeholder="Paper Abstract" rows="8" name="abstract" id="abstract"></textarea>
                         </div>
 
                         <div>
                             <label class="sr-only" for="title">Paper Title</label>
-                            <input class="input-box" placeholder="Paper Title" type="text" id="title" />
+                            <input class="input-box" placeholder="Paper Title" type="text" name="title"
+                                id="title" />
                         </div>
                         <div>
                             <label class="sr-only" for="keywords">Keywords</label>
-                            <input class="input-box" placeholder="Keywords" type="text" id="keywords" />
+                            <input class="input-box" placeholder="Keywords" type="text" name="keywords"
+                                id="keywords" />
                         </div>
 
                         <div>
@@ -99,7 +104,7 @@
                                         <span class="text-blue-600 underline">browse</span>
                                     </span>
                                 </span>
-                                <input id="photo-dropbox" type="file" class="sr-only" />
+                                <input name="upload" id="upload" type="file" class="sr-only" />
                             </label>
                         </div>
 

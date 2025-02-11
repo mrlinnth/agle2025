@@ -48,7 +48,7 @@
         ],
         [
             'title' => 'Registration',
-            'path' => '/registration',
+            'path' => '/register',
         ],
         [
             'title' => 'Contact',
