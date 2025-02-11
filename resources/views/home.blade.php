@@ -1,6 +1,6 @@
 <x-layout>
     <section id="home"
-        class="relative h-screen overflow-hidden bg-cover bg-no-repeat pt-[120px] md:pt-[130px] lg:pt-[160px]"
+        class="relative h-full lg:h-screen overflow-hidden bg-cover bg-no-repeat pt-[120px] md:pt-[130px] lg:pt-[160px]"
         style="background-image: url('/assets/hero/hero.jpg');">
         <div class="container backdrop-blur-sm [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)]">
             <div class="-mx-4 mt-12 md:mt-20 flex flex-wrap items-center justify-center">
@@ -34,10 +34,10 @@
                 </div>
             </div>
 
-            <h4 class="pb-2 text-3xl leading-snug sm:leading-snug lg:leading-[1.2] text-center text-white">
+            <h4 class="pt-4 md:pt-0 pb-2 text-3xl leading-snug  md:leading-[1.2] text-center text-white">
                 Publication Opportunity
             </h4>
-            <p class="pb-4 text-xl leading-snug sm:leading-snug lg:leading-[1.2] text-center text-white">
+            <p class="pb-4 text-xl leading-snug  md:leading-[1.2] text-center text-white">
                 Collaboration with “Journal of Rural Studies” and “Research in Globalization”
             </p>
         </div>
