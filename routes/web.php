@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\PositionEnum;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AbstractController;
 use App\Http\Controllers\CommitteeController;
@@ -21,3 +22,8 @@ Route::get('/submissions/{reference}', [SubmissionController::class, 'show'])->n
 Route::resource('/submissions', SubmissionController::class)->only(['store', 'edit', 'update']);
 Route::get('/registrations/{reference}', [RegistrationController::class, 'show'])->name('registrations.show');
 Route::resource('/registrations', RegistrationController::class)->only(['store', 'edit', 'update']);
+
+Route::get('/playground', function () {
+    $data = array_column(PositionEnum::cases(), 'value');
+    dd($data);
+});
