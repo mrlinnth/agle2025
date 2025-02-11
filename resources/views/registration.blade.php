@@ -41,19 +41,57 @@
     </section>
     <section class="py-20 bg-gray-1">
         <div class="container">
-            <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-                <div class="lg:col-span-2 lg:py-12">
-                    <h2 class="text-lg font-semibold">Cancellation Policy</h2>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis numquam adipisci
-                        consequatur placeat corrupti iusto doloribus ab nihil maiores aliquam vel voluptatem
-                        magnam deserunt, consectetur voluptas. Ipsam vitae tempore voluptates!
-                    </p>
+            <h2 class="mb-4 text-3xl font-bold sm:text-4xl md:text-[40px] md:leading-[1.2] text-center">
+                Registraiton Form
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 gap-4">
+                    <div>
+                        <h2 class="mb-2 font-bold">Registration Instructions</h2>
+                        <ol class="list-decimal">
+                            <li>Transfer Registration Fee</li>
+                            <li>Enter Personal Information</li>
+                            <li>Upload Transfer Slip</li>
+                            <li>Receive Confirmation (within 2-3 business days)</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h2 class="mb-2 font-bold">Transfer from Overseas</h2>
+                        <p>Payment for registration fee can be transfer from overseas through the AIT Current Account
+                            (A/C) details below:</p>
+                        <ol class="list-disc">
+                            <li>Thai Bhat Account: Siam Commercial Bank, Thammasat University Hospital Branch</li>
+                            <li>Name of A/C: ASIAN INSTITUTE OF TECHNOLOGY</li>
+                            <li>Current A/C # 468-046301-2</li>
+                            <li>Address: 95 Moo 8, Kiong Nueng, Kiong Luang, Pathumthani 12120 Thailand</li>
+                            <li>Swift Code: SICOTHBK</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h2 class="mb-2 font-bold">Transfer in Thailand</h2>
+                        <p>Payment for registration fee can be transfer in Thailand through the AIT Saving Account
+                            (A/C) details below:</p>
+                        <ol class="list-disc">
+                            <li>Thai Bhat Account: Siam Commercial Bank, Thammasat University Hospital Branch</li>
+                            <li>Name of A/C: ASIAN INSTITUTE OF TECHNOLOGY</li>
+                            <li>Current A/C # 405-999567-0</li>
+                            <li>Address: 95 Moo 8, Kiong Nueng, Kiong Luang, Pathumthani 12120 Thailand</li>
+                            <li>Swift Code: SICOTHBK</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h2 class="mb-2 font-bold">Cancellation Policy</h2>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis numquam adipisci
+                            consequatur placeat corrupti iusto doloribus ab nihil maiores aliquam vel voluptatem
+                            magnam deserunt, consectetur voluptas. Ipsam vitae tempore voluptates!
+                        </p>
+                    </div>
                 </div>
 
-                <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+                <div class="rounded-lg bg-white p-8 shadow-lg">
                     <form action="#" class="space-y-4">
-                        <h2 class="text-lg font-semibold">Personal Information</h2>
+                        <h2 class="mb-2 font-bold">Personal Information</h2>
                         <div>
                             <label class="sr-only" for="name">Name</label>
                             <input class="input-box" placeholder="Name" type="text" id="name" />
@@ -65,8 +103,8 @@
 
                         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <div>
-                                <label class="sr-only" for="country">Country</label>
-                                <input class="input-box" placeholder="Country" type="text" id="country" />
+                                <label class="sr-only" for="email">Email</label>
+                                <input class="input-box" placeholder="Email" type="email" id="email" />
                             </div>
 
                             <div>
@@ -75,43 +113,53 @@
                             </div>
                         </div>
 
-                        <h2 class="text-lg font-semibold">Payment Information</h2>
-                        <div>
-                            <label class="sr-only" for="name">Bank Account Holder</label>
-                            <input class="input-box" placeholder="Bank Account Holder Name" type="text"
-                                id="name" />
-                        </div>
-                        <div>
-                            <label class="sr-only" for="institution">Account Number</label>
-                            <input class="input-box" placeholder="Account Number" type="text" id="institution" />
-                        </div>
-
-                        <div class="grid grid-cols-3 gap-4">
+                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             <div>
-                                <label class="sr-only" for="country">Account Type</label>
-                                <input class="input-box" placeholder="Account Type" type="text" id="country" />
+                                <label class="sr-only" for="role">Role</label>
+                                <select name="role" id="role" class="input-box">
+                                    <option value="">Select Role</option>
+                                    <option value="student">Student</option>
+                                    <option value="faculty">Faculty</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </div>
 
                             <div>
-                                <label class="sr-only" for="phone">Swift Code</label>
-                                <input class="input-box" placeholder="Swift Code" type="tel" id="phone" />
-                            </div>
-
-                            <div>
-                                <label class="sr-only" for="phone">Currency</label>
-                                <input class="input-box" placeholder="Currency" type="tel" id="phone" />
+                                <label class="sr-only" for="pax">Number of people</label>
+                                <input class="input-box" placeholder="Number of people" type="number" id="pax"
+                                    max="10" min="1" />
                             </div>
                         </div>
 
+
+                        <h2 class="mb-2 font-bold">Upload Transaction Detail/Payment Slip</h2>
                         <div>
-                            <label class="sr-only" for="institution">Address</label>
-                            <input class="input-box" placeholder="Address" type="text" id="institution" />
+                            <label
+                                class="flex cursor-pointer appearance-none justify-center rounded-md border border-dashed border-gray-300 bg-white px-3 py-6 text-sm transition hover:border-gray-400 focus:border-solid focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:opacity-75"
+                                tabindex="0">
+                                <span class="flex items-center space-x-2">
+                                    <svg class="h-6 w-6 stroke-gray-400" viewBox="0 0 256 256">
+                                        <path d="M96,208H72A56,56,0,0,1,72,96a57.5,57.5,0,0,1,13.9,1.7" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></path>
+                                        <path d="M80,128a80,80,0,1,1,144,48" fill="none" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="24"></path>
+                                        <polyline points="118.1 161.9 152 128 185.9 161.9" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline>
+                                        <line x1="152" y1="208" x2="152" y2="128" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                                    </svg>
+                                    <span class="text-xs font-medium text-gray-600">
+                                        Drop files to Attach, or
+                                        <span class="text-blue-600 underline">browse</span>
+                                    </span>
+                                </span>
+                                <input id="photo-dropbox" type="file" class="sr-only" />
+                            </label>
                         </div>
 
                         <div class="mt-4">
-                            <button type="submit"
-                                class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto">
-                                Submit
+                            <button type="submit" class="btn-primary">
+                                Register
                             </button>
                         </div>
                     </form>

@@ -18,26 +18,26 @@
                 <div class="grid grid-cols-1 gap-4">
                     <div>
                         <h3 class="mb-2 font-bold">Theme and Topic</h3>
-                        <p class="lg:mb-9">The conference will partner with the “Journal of Rural Studies” and “Research
+                        <p>The conference will partner with the “Journal of Rural Studies” and “Research
                             in Globalization” (Elsevier) for publication. Only Special Issue for the Global Perspectives
                             in rural development and innovation.
                         </p>
                     </div>
                     <div>
                         <h3 class="mb-2 font-bold">Length</h3>
-                        <p class="lg:mb-9">Maximum 250 words with 6 keywords</p>
+                        <p>Maximum 250 words with 6 keywords</p>
                     </div>
                     <div>
                         <h3 class="mb-2 font-bold">Submission Deadline</h3>
-                        <p class="lg:mb-9">May 30, 2025</p>
+                        <p>May 30, 2025</p>
                     </div>
                     <div>
                         <h3 class="mb-2 font-bold">Selection Announcement</h3>
-                        <p class="lg:mb-9">June 30, 2025</p>
+                        <p>June 30, 2025</p>
                     </div>
                     <div>
                         <h3 class="mb-2 font-bold">Mode of Presentation</h3>
-                        <p class="lg:mb-9">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, cumque?
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, cumque?
                             Blanditiis est error, explicabo hic maiores mollitia rerum.</p>
                     </div>
                 </div>
