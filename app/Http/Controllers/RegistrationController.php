@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreRegistrationRequest;
 use App\Http\Requests\UpdateRegistrationRequest;
+use App\Mail\NewRegistration;
 use App\Models\Registration;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
 class RegistrationController extends Controller
@@ -31,6 +33,7 @@ class RegistrationController extends Controller
         $path = $request->upload->store('payments');
         $data = array_merge($request->safe()->except(['upload']), ['payment' => $path, 'reference' => uniqid()]);
         $registration = Registration::create($data);
+        Mail::to(config('mail.noti_address'))->send(new NewRegistration(($registration)));
 
         return redirect()->route('registrations.show', ['reference' => $registration->reference]);
     }
