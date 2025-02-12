@@ -45,51 +45,78 @@
                     <form method="POST" action="{{ route('submissions.store') }}" enctype="multipart/form-data"
                         class="space-y-4">
                         @csrf
+                        <h2 class="mb-2 font-bold">Abstract Submission</h2>
                         <div>
-                            <label class="sr-only" for="name">Name</label>
-                            <input class="input-box" placeholder="Name" type="text" name="name" id="name" />
+                            <label class="text-sm text-dark-3" for="name">Full Name*</label>
+                            <input class="input-box" placeholder="Name" type="text" name="name" id="name"
+                                required />
                         </div>
                         <div>
-                            <label class="sr-only" for="institution">Institution</label>
+                            <label class="text-sm text-dark-3" for="email">Email*</label>
+                            <input class="input-box" placeholder="Email" type="email" name="email" id="email"
+                                required />
+                        </div>
+                        <div>
+                            <label class="text-sm text-dark-3" for="position">Position*</label>
+                            <select class="input-box" name="position" id="position">
+                                @foreach ($positions as $position)
+                                    <option value="{{ $position }}">{{ $position }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-sm text-dark-3" for="institution">Institution*</label>
                             <input class="input-box" placeholder="Institution" type="text" name="institution"
-                                id="institution" />
-                        </div>
-
-                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                            <div>
-                                <label class="sr-only" for="country">Country</label>
-                                <input class="input-box" placeholder="Country" type="text" name="country"
-                                    id="country" />
-                            </div>
-
-                            <div>
-                                <label class="sr-only" for="phone">Contact</label>
-                                <input class="input-box" placeholder="Contact Number" type="text" name="phone"
-                                    id="phone" />
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="sr-only" for="abstract">Abstract</label>
-
-                            <textarea class="input-box" placeholder="Paper Abstract" rows="8" name="abstract" id="abstract"></textarea>
-                        </div>
-
-                        <div>
-                            <label class="sr-only" for="title">Paper Title</label>
-                            <input class="input-box" placeholder="Paper Title" type="text" name="title"
-                                id="title" />
+                                id="institution" required />
                         </div>
                         <div>
-                            <label class="sr-only" for="keywords">Keywords</label>
-                            <input class="input-box" placeholder="Keywords" type="text" name="keywords"
-                                id="keywords" />
+                            <label class="text-sm text-dark-3" for="country">Country*</label>
+                            <select class="input-box" name="country" id="country">
+                                @foreach ($countries as $country)
+                                    <option value="{{ $country['name'] }}">{{ $country['name'] }}</option>
+                                @endforeach
+                            </select>
                         </div>
-
                         <div>
-                            <h2 class="font-bold">Upload Paper</h2>
-                            <p class="mb-2 text-sm font-light">Max 2MB. Allow file type: pdf.</p>
+                            <label class="text-sm text-dark-3" for="first_author">Name of First author and
+                                affiliation*</label>
+                            <input class="input-box" placeholder="First author" type="text" name="first_author"
+                                id="first_author" required />
+                        </div>
+                        <div>
+                            <label class="text-sm text-dark-3" for="corresponding_author">Name of Corresponding author
+                                and affiliation</label>
+                            <input class="input-box" placeholder="Corresponding author" type="text"
+                                name="corresponding_author" id="corresponding_author" />
+                        </div>
+                        <div>
+                            <label class="text-sm text-dark-3" for="other_author">Name of other authors and their
+                                affiliation</label>
+                            <input class="input-box" placeholder="Other author" type="text" name="other_author"
+                                id="other_author" />
+                        </div>
+                        <div>
+                            <label class="text-sm text-dark-3" for="paper_title">Title of Abstract*</label>
+                            <input class="input-box" placeholder="Abstract Title" type="text" name="paper_title"
+                                id="paper_title" required />
+                        </div>
+                        <div>
+                            <label class="text-sm text-dark-3">Please upload the Abstract paper file. Max 2MB. Allow
+                                file type: pdf*</label>
                             <input class="input-box" name="upload" id="upload" type="file" required />
+                        </div>
+                        <div>
+                            <p class="text-sm text-dark-3">How will you present your paper?*</p>
+                            <div>
+                                <input type="checkbox" id="po_1" name="presentation_options[]"
+                                    value="Poster Presentation" required />
+                                <label for="po_1">Poster Presentation</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="po_2" name="presentation_options[]"
+                                    value="Oral Presentation" required />
+                                <label for="po_2">Oral Presentation</label>
+                            </div>
                         </div>
 
                         <div class="mt-4">

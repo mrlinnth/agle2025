@@ -23,13 +23,16 @@ class StoreSubmissionRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'max:255'],
+            'position' => ['required', 'string', 'max:255'],
             'institution' => ['required', 'string', 'max:255'],
             'country' => ['required', 'string', 'max:255'],
-            'phone' => ['required', 'string', 'max:255'],
-            'abstract' => ['required', 'string', 'max:255'],
-            'title' => ['required', 'string', 'max:255'],
-            'keywords' => ['required', 'string', 'max:255'],
-            'upload' => ['required', 'file', 'mimes:pdf', 'max:2048'],
+            'first_author' => ['required', 'string', 'max:255'],
+            'corresponding_author' => ['nullable', 'string', 'max:255'],
+            'other_author' => ['nullable', 'string', 'max:255'],
+            'paper_title' => ['required', 'string', 'max:255'],
+            'presentation_options' => ['required', 'array'],
+            'upload' => ['required', 'file', 'mimes:pdf,jpg,png', 'max:2048'],
         ];
     }
 }
