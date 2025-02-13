@@ -93,10 +93,16 @@
                 </div>
             </div>
             <div class="my-10">
-                <h3 class="mt-2 text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
+                <h2 class="mt-2 text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
                     Conference Themes
-                </h3>
-                <ul class="mt-8 space-y-3 font-medium">
+                </h2>
+                <p class="my-4 text-body-color">
+                    Researchers and practitioners are invited to explore transformative ideas and share
+                    their insights which are vital for fostering innovation and resilience in rural
+                    contexts. Additionally, research papers relevant to the following themes are encouraged
+                    for submission.
+                </p>
+                <ul class="mt-8 space-y-3">
                     @foreach ($themes as $text)
                         <li class="flex items-start lg:col-span-1">
                             <div class="flex-shrink-0">
@@ -106,7 +112,7 @@
                                         clip-rule="evenodd" />
                                 </svg>
                             </div>
-                            <p class="ml-3 leading-5 text-gray-600">{{ $text }}</p>
+                            <p class="ml-3 text-body-color">{{ $text }}</p>
                         </li>
                     @endforeach
                 </ul>
