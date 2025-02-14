@@ -109,109 +109,16 @@
                         </div>
                     </div>
                     <div class="w-full px-4 lg:w-1/2">
-                        <div class="my-10">
-                            <h2 class="text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
-                                Conference Themes
-                            </h2>
-                            <p class="my-4 text-body-color">
-                                Researchers and practitioners are invited to explore transformative ideas and share
-                                their insights which are vital for fostering innovation and resilience in rural
-                                contexts. Additionally, research papers relevant to the following themes are encouraged
-                                for submission.
-                            </p>
-                            <ul class="mt-8 space-y-3">
-                                @foreach ($themes as $text)
-                                    <li class="flex items-start lg:col-span-1">
-                                        <div class="flex-shrink-0">
-                                            <svg class="h-5 w-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd"
-                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                        </div>
-                                        <p class="ml-3 text-body-color">{{ $text }}</p>
-                                    </li>
-                                @endforeach
-                            </ul>
-                        </div>
+                        <x-theme />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="">
-        <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:items-center">
-            <div class="mx-auto max-w-xl text-center">
-                <h1 class="text-3xl font-extrabold sm:text-5xl">
-                    Publication
-                    <strong class="font-extrabold text-primary sm:block">Opportunities</strong>
-                </h1>
+    <x-publication />
 
-                <p class="mt-4">
-                    The conference will collaborate with the “Journal of Rural Studies” and “Research in
-                    Globalization” Elsevier to publish a special issue. The best abstracts will be invited to
-                    submit full papers for consideration in this special issue.
-                </p>
-
-                <div class="mt-8 flex flex-wrap justify-center gap-4">
-                    <a class="btn-primary" href="#">
-                        Submit Your Paper
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-gray-1">
-        <div class="container py-20">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
-                        Conference Location
-                    </h2>
-                    <p>58 หมู่​9 Phahonyothin Rd, Khlong Nueng, Khlong Luang District, Pathum Thani 12120, Thailand</p>
-                </div>
-                <div>
-                    <iframe class="w-full h-[300px]"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4766.916176001432!2d100.6143444!3d14.078948100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e27f8bf182c5cf%3A0xa51b43c33d385a98!2sAIT%20Conference%20Center!5e1!3m2!1sen!2ssg!4v1739505506720!5m2!1sen!2ssg"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-            <div class="flex flex-col gap-4">
-                <h2 class="text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
-                    Field Trip Location
-                </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias non, saepe maiores
-                    reprehenderit fugiat eligendi odio ut animi dolorum enim dolore? Atque incidunt laudantium
-                    dolorem repellat odio laborum labore!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quod, itaque praesentium ipsum
-                    blanditiis nemo numquam officiis nisi ipsam, odit tempora consectetur, mollitia atque magni
-                    consequuntur. Ratione corrupti tempore obcaecati?</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-lg font-bold">
-                        Kanchanaburi Province
-                    </h2>
-                    <iframe class="w-full h-[300px]"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1216488.5516392142!2d98.3365344!3d14.7810746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e31ad50641d69d%3A0x4f97bc0e92713e12!2sKanchanaburi%2C%20Thailand!5e1!3m2!1sen!2ssg!4v1739506014977!5m2!1sen!2ssg"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-lg font-bold">
-                        Saraburi Province
-                    </h2>
-                    <iframe class="w-full h-[300px]"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d608538.2604707063!2d100.7622388!3d14.6757537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311dddb08026b987%3A0x1019237450c48b0!2sSaraburi%2C%20Thailand!5e1!3m2!1sen!2ssg!4v1739506036310!5m2!1sen!2ssg"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+    <x-location />
 
     <x-countdown />
 

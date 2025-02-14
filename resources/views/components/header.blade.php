@@ -17,10 +17,6 @@
                     'path' => '/about#location',
                 ],
                 [
-                    'title' => 'Field Trip',
-                    'path' => '/about#field-trip',
-                ],
-                [
                     'title' => 'Abstract Submission',
                     'path' => '/about#abstract',
                 ],
