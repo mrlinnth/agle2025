@@ -1,15 +1,15 @@
 @props([
     'pricings' => [
-        'Researchers from Global South: $350',
-        'Students from Global South: $170',
-        'Students: $250',
-        'Others: $400',
+        'Researchers from Global South: USD 350',
+        'Students from Global South: USD 170',
+        'Students: USD 250',
+        'Others: USD 400',
     ],
     'discounts' => [
-        'Researchers from Global South: $250',
-        'Students from Global South: $150',
-        'Students: $200',
-        'Others: $300',
+        'Researchers from Global South: USD 250',
+        'Students from Global South: USD 150',
+        'Students: USD 200',
+        'Others: USD 300',
     ],
 ])
 
@@ -80,8 +80,8 @@
                     Field Trip Fee (Optional)
                 </h3>
                 <ul class="">
-                    <li>Two Days Field Trip: $100 (inlucding food and transportation)</li>
-                    <li>Gala Dinner: $55 (including transportation)</li>
+                    <li>Two Days Field Trip: USD 100 (inlucding food and transportation)</li>
+                    <li>Gala Dinner: USD 55 (including transportation)</li>
                 </ul>
             </div>
         </div>

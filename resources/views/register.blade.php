@@ -17,61 +17,35 @@
 
     <section class="py-20 bg-gray-1">
         <div class="container">
-            <div class="m-auto flex w-full flex-col items-center gap-2 text-center">
-                <h2 class="text-lg">Registration Deadline</h2>
-                <p id="pricing" class="text-lg font-extrabold tracking-tight">
-                    August 15, 2025
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <x-pricing />
-
-    <section class="relative z-10 overflow-hidden bg-primary py-20 lg:py-[115px]">
-        <div class="container mx-auto">
-            <div class="relative overflow-hidden">
-                <div class="-mx-4 flex flex-wrap items-stretch">
-                    <div class="w-full px-4">
-                        <div class="mx-auto max-w-[570px] text-center">
-                            <h2 class="mb-2.5 text-5xl font-bold text-white md:text-[38px] md:leading-[1.44]">
-                                Best Abstract Awards
-                            </h2>
-                            <p class="mx-auto mb-6 max-w-[515px] text-base font-bold leading-[1.5] text-white">
-                                Fee waivers for early-stage researchers from the Global South
-                            </p>
-                            <p class="mx-auto mb-6 max-w-[515px] text-sm leading-[1.5] text-white">
-                                Optional Costs:<br />
-                                Two days Field Trip: $100 (including Food and transportation)<br />
-                                Gala Dinner: $55 (including transportation)Detail of the conference fee
-                            </p>
-                        </div>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-2 text-center">
+                <div>
+                    <h2 class="text-lg">Registration Deadline</h2>
+                    <p class="text-lg font-extrabold text-primary">
+                        September 7, 2025 (Sunday)
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-lg">Early Bird Registration Deadline</h2>
+                    <p class="text-lg font-extrabold text-primary">
+                        June 30, 2025 (Monday)
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <section class="py-20 bg-gray-1">
         <div class="container">
-            <h2 class="mb-4 text-3xl font-bold sm:text-4xl md:text-[40px] md:leading-[1.2] text-center">
-                Registraiton Form
-            </h2>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="grid grid-cols-1 gap-4">
-                    <div>
-                        <h2 class="mb-2 font-bold">Registration Instructions</h2>
-                        <ol class="list-decimal">
-                            <li>Transfer Registration Fee</li>
-                            <li>Enter Personal Information</li>
-                            <li>Upload Transfer Slip</li>
-                            <li>Receive Confirmation (within 2-3 business days)</li>
-                        </ol>
-                    </div>
+                <div class="space-y-4">
+                    <h2 class="mb-4 text-3xl font-bold">
+                        Payment Instructions
+                    </h2>
                     <div>
                         <h2 class="mb-2 font-bold">Transfer from Overseas</h2>
                         <p>Payment for registration fee can be transfer from overseas through the AIT Current Account
                             (A/C) details below:</p>
-                        <ol class="list-disc">
+                        <ol class="ml-4 list-disc">
                             <li>Thai Bhat Account: Siam Commercial Bank, Thammasat University Hospital Branch</li>
                             <li>Name of A/C: ASIAN INSTITUTE OF TECHNOLOGY</li>
                             <li>Current A/C # 468-046301-2</li>
@@ -83,7 +57,7 @@
                         <h2 class="mb-2 font-bold">Transfer in Thailand</h2>
                         <p>Payment for registration fee can be transfer in Thailand through the AIT Saving Account
                             (A/C) details below:</p>
-                        <ol class="list-disc">
+                        <ol class="ml-4 list-disc">
                             <li>Thai Bhat Account: Siam Commercial Bank, Thammasat University Hospital Branch</li>
                             <li>Name of A/C: ASIAN INSTITUTE OF TECHNOLOGY</li>
                             <li>Current A/C # 405-999567-0</li>
@@ -105,7 +79,7 @@
                     <form method="POST" action="{{ route('registrations.store') }}" enctype="multipart/form-data"
                         class="space-y-6">
                         @csrf
-                        <h2 class="mb-2 font-bold">Personal Information</h2>
+                        <h2 class="mb-2 font-bold">Registration Form</h2>
                         <div>
                             <label class="text-sm text-dark-3" for="name">Full Name*</label>
                             <input class="input-box" placeholder="Name" type="text" name="name" id="name"
@@ -211,15 +185,14 @@
                                 <strong>1 - Conference</strong>
                             </p>
                             <ul class="ml-8  list-disc">
-                                <li>Regular registration Fee : 400 US$, (Researchers from the Global South: 350 USD.
-                                    Students: 250 USD, Students from Global South: $170)</li>
-                                <li>Early Bird registration (by June 30, 2025) : 300 USD, (Researchers from the Global
-                                    South: 250 USD. Students: 200 USD, Students from Global South: $150)</li>
+                                <li>Regular registration Fee : USD 400, (Researchers from the Global South: USD 350.
+                                    Students: USD 250, Students from Global South: USD 170)</li>
+                                <li>Early Bird registration (by June 30, 2025) : USD 300, (Researchers from the Global
+                                    South: USD 250. Students: USD 200, Students from Global South: USD 150)</li>
                             </ul>
-                            <p class=""><strong>2 - Field Trip</strong>: 50 USD for one day and 100
-                                USD
+                            <p class=""><strong>2 - Field Trip</strong>: USD 50 for one day and USD 100
                                 for two days</p>
-                            <p class=""><strong>3 - Gala Dinner</strong>: 50 USD (including
+                            <p class=""><strong>3 - Gala Dinner</strong>: USD 55 (including
                                 transportation from AIT)</p>
                         </div>
                         <div>
