@@ -84,7 +84,7 @@
             <div class="-mx-4 flex flex-wrap">
                 <div class="w-full px-4 md:w-2/3 lg:w-1/2">
                     <div class="my-1">
-                        <div class="-mx-3 flex items-center justify-center md:justify-start">
+                        <div class="-mx-3 flex flex-col md:flex-row items-center justify-center md:justify-start">
                             <a href="javascript:void(0)"
                                 class="px-3 text-base text-dark-4 hover:text-dark-6 hover:underline">
                                 Privacy policy

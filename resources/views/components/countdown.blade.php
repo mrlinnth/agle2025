@@ -1,25 +1,17 @@
-<section id="deadline" class="bg-primary py-[115px]">
-    <div class="container mx-auto">
-        <div class="relative">
-            <div class="-mx-4 flex flex-wrap items-stretch">
-                <div class="w-full px-4 text-white">
-                    <div class="m-auto flex w-full flex-col items-center gap-2 text-center">
-                        <h2 class="text-lg">Registration Deadline</h2>
-                        <p id="pricing" class="text-lg font-extrabold tracking-tight">
-                            September 07, 2025
-                        </p>
-                    </div>
-                    <div class="mx-auto mt-4 max-w-[570px] text-center">
-                        <h2 class="text-5xl font-extrabold md:text-[38px] md:leading-[1.44]">
-                            270 : 23 : 59 : 59
-                        </h2>
-                        <p class="mx-auto mb-6 max-w-[515px] text-base leading-[1.5]">days left</p>
-                        <a href="javascript:void(0)" class="btn-secondary">
-                            Start Your Registration
-                        </a>
-                    </div>
-                </div>
-            </div>
+<section id="deadline" class="bg-primary">
+    <div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:items-center">
+        <div class="mx-auto max-w-xl text-center text-white">
+            <h2 class="text-lg">Registration Deadline</h2>
+            <p class="text-lg font-extrabold">
+                September 07, 2025
+            </p>
+            <h2 class="text-3xl font-extrabold sm:text-5xl my-4">
+                270 : 23 : 59 : 59
+            </h2>
+            <p class="mb-4">days left</p>
+            <a href="/register" class="btn-secondary">
+                Start Your Registration
+            </a>
         </div>
     </div>
 </section>
