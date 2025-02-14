@@ -17,20 +17,12 @@
                     'path' => '/about#location',
                 ],
                 [
-                    'title' => 'Abstract Submission',
-                    'path' => '/about#abstract',
-                ],
-                [
-                    'title' => 'Publication Option',
-                    'path' => '/about#publication',
-                ],
-                [
-                    'title' => 'Registration Deadline',
+                    'title' => 'Registration',
                     'path' => '/about#deadline',
                 ],
                 [
-                    'title' => 'Registration Fee',
-                    'path' => '/about#fee',
+                    'title' => 'Accomodation',
+                    'path' => '/about#accomodation',
                 ],
             ],
         ],
