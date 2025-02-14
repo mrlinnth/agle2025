@@ -40,8 +40,6 @@
         </div>
     </section>
 
-    <x-publication />
-
     <x-countdown />
 
     <x-pricing />
