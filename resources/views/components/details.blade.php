@@ -6,7 +6,7 @@
         'Networking opportunities',
     ],
 ])
-<div class="">
+<div class="" id="details">
     <h3 class="mt-2 text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">
         Conference Details
     </h3>

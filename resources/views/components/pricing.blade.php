@@ -13,7 +13,7 @@
     ],
 ])
 
-<section id="fee" class="py-32">
+<section id="payment" class="py-32">
     <div class="container">
         <div class="grid place-items-center">
             <div class="m-auto flex w-full flex-col items-center gap-4 text-center">

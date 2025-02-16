@@ -21,7 +21,8 @@
             <div class="flex flex-col md:flex-row gap-4">
                 <div class="basis-1 md:basis-1/3">
                     <p>
-                        Each abstract should be no longer than 250 words and must include 6 keywords. The conference
+                        Each abstract should be no longer than <strong>250 words</strong> and must include <strong>6
+                            keywords</strong>. The conference
                         will collaborate with the “Journal of Rural Studies” and “Research in Globalization”
                         Elsevier to publish a special issue. The best abstracts will be invited to submit full
                         papers for consideration in this special issue.

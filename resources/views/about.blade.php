@@ -5,9 +5,10 @@
 
     <section class="py-20 bg-gray-1" id="details">
         <div class="container">
-            <x-details />
+            <x-theme />
             <x-agenda />
-            <div class="flex flex-col gap-8">
+            <x-location />
+            <div class="flex flex-col gap-8" id="dates">
                 <h3 class="text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">
                     Important Dates
                 </h3>
@@ -35,8 +36,6 @@
                     </div>
                 </div>
             </div>
-            <x-theme />
-            <x-location />
         </div>
     </section>
 

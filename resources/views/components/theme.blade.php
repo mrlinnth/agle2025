@@ -10,7 +10,7 @@
     ],
 ])
 
-<div class="my-10">
+<div class="" id="theme">
     <h2 class="text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
         Conference Themes
     </h2>

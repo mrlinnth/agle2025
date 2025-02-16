@@ -1,8 +1,8 @@
 <section id="location" class="bg-gray-1">
-    <div class="container py-20">
+    <div class="">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-10">
             <div class="flex flex-col gap-4">
-                <h2 class="text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
+                <h2 class="text-xl font-bold leading-8">
                     Conference Location
                 </h2>
                 <p>58 หมู่​9 Phahonyothin Rd, Khlong Nueng, Khlong Luang District, Pathum Thani 12120, Thailand</p>
@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="flex flex-col gap-4">
-            <h2 class="text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
+            <h2 class="text-xl font-bold leading-8">
                 Field Trip Location
             </h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias non, saepe maiores

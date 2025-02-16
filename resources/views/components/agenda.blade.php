@@ -1,4 +1,4 @@
-<div class="my-10">
+<div class="my-10" id="agenda">
     <h3 class="mt-2 text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">
         Conference Agenda
     </h3>

@@ -9,19 +9,27 @@
             'path' => '/about',
             'subMenu' => [
                 [
-                    'title' => 'Conference Details',
-                    'path' => '/about#details',
+                    'title' => 'Conference Theme',
+                    'path' => '/about#theme',
                 ],
                 [
-                    'title' => 'Location',
-                    'path' => '/about#location',
+                    'title' => 'Agenda',
+                    'path' => '/about#agenda',
                 ],
                 [
-                    'title' => 'Registration',
-                    'path' => '/about#deadline',
+                    'title' => 'Important Dates',
+                    'path' => '/about#dates',
+                ],
+                [
+                    'title' => 'Payment',
+                    'path' => '/about#payment',
                 ],
                 [
                     'title' => 'Accomodation',
+                    'path' => '/about#accomodation',
+                ],
+                [
+                    'title' => 'Airport Transportation',
                     'path' => '/about#accomodation',
                 ],
             ],
@@ -46,7 +54,7 @@
 ])
 
 
-<header class="ud-header fixed top-0 left-0 right-0 z-50">
+<header class="ud-header bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
     <div class="container">
         <div class="flex h-24 items-center justify-between">
             <div class="md:flex md:items-center md:gap-12">
