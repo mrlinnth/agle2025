@@ -27,3 +27,6 @@ body {
 .input-box {
     @apply w-full border border-dark-5 bg-transparent p-3 text-body-color placeholder:text-body-color/60;
 }
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
