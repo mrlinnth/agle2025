@@ -28,8 +28,9 @@ class SubmissionController extends Controller
      */
     public function store(StoreSubmissionRequest $request)
     {
+        // dd($request->all());
         $path = $request->upload->store('papers');
-        $data = array_merge($request->safe()->except(['upload']), ['file' => $path, 'reference' => uniqid()]);
+        $data = array_merge($request->safe()->except(['upload', 'g-recaptcha-response']), ['file' => $path, 'reference' => uniqid()]);
         $submission = Submission::create($data);
 
         return redirect()->route('submissions.show', ['reference' => $submission->reference]);

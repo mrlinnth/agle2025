@@ -225,6 +225,7 @@
                         </div>
 
                         <div class="mt-4">
+                            {!! RecaptchaV3::field('submit') !!}
                             <button type="submit" class="btn-primary">
                                 Register
                             </button>

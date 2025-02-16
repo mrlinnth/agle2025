@@ -33,6 +33,7 @@ class StoreSubmissionRequest extends FormRequest
             'paper_title' => ['required', 'string', 'max:255'],
             'presentation_options' => ['required', 'array'],
             'upload' => ['required', 'file', 'mimes:pdf,jpg,png', 'max:2048'],
+            'g-recaptcha-response' => ['required', 'recaptchav3:submit,0.5'],
         ];
     }
 }

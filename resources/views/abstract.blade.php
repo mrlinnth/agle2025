@@ -3,6 +3,18 @@
         Call for Abstract Submission
     </x-breadcrumb>
 
+    @if ($errors->any())
+        <div role="alert" class="rounded-sm border-s-4 border-red-500 bg-red-50 p-4">
+            <strong class="block font-medium text-red-800">Form submission error</strong>
+
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <section class="py-20 bg-gray-1">
         <div class="container">
 
@@ -97,6 +109,7 @@
                         </div>
 
                         <div class="mt-4">
+                            {!! RecaptchaV3::field('submit') !!}
                             <button type="submit" class="btn-primary">
                                 Submit
                             </button>

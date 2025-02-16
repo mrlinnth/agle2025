@@ -35,6 +35,7 @@ class StoreRegistrationRequest extends FormRequest
             'join_dinner' => ['required', 'boolean'],
             'participation_option' => ['required', 'string'],
             'upload' => ['required', 'file', 'mimes:pdf,jpg,png', 'max:2048'],
+            'g-recaptcha-response' => ['required', 'recaptchav3:submit,0.5'],
         ];
     }
 }

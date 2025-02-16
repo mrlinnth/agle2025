@@ -11,6 +11,7 @@
     <title>{{ $title ?? 'AGLE 2025' }}</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {!! RecaptchaV3::initJs() !!}
 </head>
 
 <body>
