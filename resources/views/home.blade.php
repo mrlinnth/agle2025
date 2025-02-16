@@ -40,7 +40,7 @@
             <h2 class="text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
                 About The Conference
             </h2>
-            <p class="my-4 text-base leading-relaxed text-body-color">
+            <p class="my-4 text-base leading-relaxed text-body-color text-justify">
                 The 2025 AGLE conference on “Rural Innovation and Technological Advance for Sustainable
                 and Resilient Development” will be held from 5-8 November 2025 in Bangkok, Thailand. The
                 conference will include two days of presentations and poster sessions and two days of
@@ -68,7 +68,11 @@
 
     <x-publication />
 
-    <x-location />
+    <section class="bg-gray-1">
+        <div class="container py-20">
+            <x-location />
+        </div>
+    </section>
 
     <x-countdown />
 
