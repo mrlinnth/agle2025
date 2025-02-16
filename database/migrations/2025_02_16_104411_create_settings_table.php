@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('event_location');
             $table->string('event_deadline');
             $table->string('contact_address');
-            $table->string('contact_map');
+            $table->text('contact_map');
             $table->string('contact_phone')->nullable();
             $table->string('contact_mail')->nullable();
             $table->string('noti_email');
