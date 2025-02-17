@@ -50,6 +50,7 @@ export default {
                 },
                 primary: "#2C6E49",
                 "primary-light": "#4C956C",
+                "primary-fade": "#8bc397",
                 secondary: "#D68C45",
                 "secondary-light": "#FEFEE3",
                 "body-color": "#212b36",

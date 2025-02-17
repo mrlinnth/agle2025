@@ -7,32 +7,6 @@
         [
             'title' => 'About',
             'path' => '/about',
-            'subMenu' => [
-                [
-                    'title' => 'Conference Theme',
-                    'path' => '/about#theme',
-                ],
-                [
-                    'title' => 'Agenda',
-                    'path' => '/about#agenda',
-                ],
-                [
-                    'title' => 'Important Dates',
-                    'path' => '/about#dates',
-                ],
-                [
-                    'title' => 'Payment',
-                    'path' => '/about#payment',
-                ],
-                [
-                    'title' => 'Accomodation',
-                    'path' => '/about#accomodation',
-                ],
-                [
-                    'title' => 'Airport Transportation',
-                    'path' => '/about#accomodation',
-                ],
-            ],
         ],
         [
             'title' => 'Committee',

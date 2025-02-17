@@ -40,25 +40,28 @@
                 About The Conference
             </h2>
             <p class="my-4 text-base leading-relaxed text-body-color text-justify">
-                The 2025 AGLE conference on “Rural Innovation and Technological Advance for Sustainable
-                and Resilient Development” will be held from 5-8 November 2025 in Bangkok, Thailand. The
-                conference will include two days of presentations and poster sessions and two days of
+                The 2025 AGLE conference on “Technological Advancement and Social Innovation for Rural and Agricultural
+                Resilience” will be held from 5-8 November 2025 in Bangkok, Thailand. The conference will include two
+                days of presentations and poster sessions and two days of
                 field trips to rural Thailand.<br /><br>
-                This scientific event aims to promote the convergence of scientific knowledge and
-                practical actions to advance innovation, technology development, and applications for
-                rural sustainability and resilience. The conference is organized by the IGU Commission
-                on Agricultural Geography and Land Engineering (AGLE) and hosted by the Asian Institute
-                of Technology (AIT), Thailand.<br /><br>
-                The conference will feature high-level, inclusive, evidence-based discussions on the
-                current challenges and priorities related to advancing innovation and technology for
-                long-term rural sustainability, with a focus on contributing to the United Nations’
-                Sustainable Development Goals (SDGs). This event offers a valuable opportunity for both
-                early stage and established researchers and practitioners, to showcase their work,
-                exchange ideas, and engage with globally renowned experts in the field. It also provides
-                a platform to enhance participants' expertise and professional recognition in rural
-                sustainability. Furthermore, the conference fosters cooperation and strengthens
-                collaborative efforts to address rural challenges and promote sustainable development
-                through innovative solutions.
+                This scientific event aims to promote the convergence of scientific knowledge and practical actions to
+                advance
+                innovation, technological development, and applications for rural sustainability and resilience. The
+                conference
+                is organized by the IGU Commission on Agricultural Geography and Land Engineering (AGLE) and hosted by
+                the
+                Asian Institute of Technology (AIT), Thailand.<br /><br>
+                The conference will feature high-level, inclusive, evidence-based discussions on the current challenges
+                and
+                priorities related to advancing innovation and technology for long-term rural sustainability, with a
+                focus on
+                contributing to the United Nations’ Sustainable Development Goals (SDGs). This event offers a valuable
+                opportunity for both early stage and established researchers and practitioners, to showcase their work,
+                exchange ideas, and engage with globally renowned experts in the field. It also provides a platform to
+                enhance
+                participants&#39; expertise and professional recognition in rural sustainability.
+                Furthermore, the conference fosters cooperation and strengthens collaborative efforts to address rural
+                challenges and promote sustainable development through innovative solutions.
             </p>
 
             <x-theme />
@@ -72,7 +75,5 @@
             <x-location />
         </div>
     </section>
-
-    <x-countdown :deadline="$setting->event_deadline" />
 
 </x-layout>

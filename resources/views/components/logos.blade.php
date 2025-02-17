@@ -1,10 +1,12 @@
-<section class="py-4">
+<section class="">
     <div class="container">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 justify-items-center">
+        <div class="flex flex-row gap-10 justify-center">
             @foreach ($clients as $client)
-                <a class="" href={{ $client['ref'] }} target="_blank" rel="nofollow noopner">
-                    <img src={{ $client['image'] }} alt={{ $client['name'] }} class="w-24" />
-                </a>
+                <div>
+                    <a class="" href={{ $client['ref'] }} target="_blank" rel="nofollow noopner">
+                        <img src={{ $client['image'] }} alt={{ $client['name'] }} class="w-24" />
+                    </a>
+                </div>
             @endforeach
         </div>
     </div>

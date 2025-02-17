@@ -39,8 +39,6 @@
         </div>
     </section>
 
-    <x-countdown :deadline="$setting->event_deadline" />
-
     <x-pricing />
 
     <section class="py-20 bg-gray-1" id="accomodation">

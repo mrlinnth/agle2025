@@ -15,10 +15,8 @@
         Conference Themes
     </h2>
     <p class="my-4 text-body-color">
-        Researchers and practitioners are invited to explore transformative ideas and share
-        their insights which are vital for fostering innovation and resilience in rural
-        contexts. Additionally, research papers relevant to the following themes are encouraged
-        for submission.
+        Abstract submissions, both oral and poster presentation sessions must be in English. Participants are
+        encouraged to submit the research on one or more topics (but are not limited to these.)
     </p>
     <ul class="mt-8 space-y-3">
         @foreach ($themes as $text)

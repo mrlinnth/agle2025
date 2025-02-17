@@ -6,9 +6,9 @@
             </h1>
 
             <p class="mt-4">
-                The conference will collaborate with the “Journal of Rural Studies” and “Research in
-                Globalization” Elsevier to publish a special issue.<br />The best abstracts will be invited to
-                submit full papers for consideration in this special issue.
+                The conference will collaborate with the “Journal of Rural Studies” (Elsevier) and “Research in
+                Globalization” (Elsevier) to publish a special issue on the conference paper.<br />
+                The best abstracts will be invited to submit full papers for consideration in this special issue.
             </p>
         </div>
     </div>

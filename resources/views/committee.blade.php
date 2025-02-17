@@ -63,16 +63,16 @@
             'image' => '/assets/speakers/8.jpg',
         ],
         [
-            'name' => 'Assoc. Prof. Yuheng Li, Chinese Academy of Sciences, China',
-            'description' =>
-                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'image' => '/assets/speakers/9.jpg',
-        ],
-        [
             'name' => 'Prof. Guy, Robinson, University of Adelaide, Australia',
             'description' =>
                 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             'image' => '/assets/speakers/4.jpg',
+        ],
+        [
+            'name' => 'Assoc. Prof. Yuheng Li, Chinese Academy of Sciences, China',
+            'description' =>
+                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            'image' => '/assets/speakers/9.jpg',
         ],
     ],
 ])
@@ -98,7 +98,7 @@
                             </div>
                             <div class="text-center">
                                 <h4 class="mb-1 text-lg font-semibold">{{ $team['name'] }}</h4>
-                                <p class="mb-5 text-sm">{{ $team['description'] }}</p>
+                                {{-- <p class="mb-5 text-sm">{{ $team['description'] }}</p> --}}
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
     <section class="py-20">
         <div class="container">
             <h2 class="mb-5 text-3xl font-bold leading-tight sm:text-[40px] sm:leading-[1.2]">
-                Organizational Committee
+                Conference Organizers
             </h2>
             <div class="-mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 @foreach ($orgTeams as $team)
@@ -122,7 +122,7 @@
                             </div>
                             <div class="text-center">
                                 <h4 class="mb-1 text-lg font-semibold">{{ $team['name'] }}</h4>
-                                <p class="mb-5 text-sm">{{ $team['description'] }}</p>
+                                {{-- <p class="mb-5 text-sm">{{ $team['description'] }}</p> --}}
                             </div>
                         </div>
                     </div>
