@@ -39,7 +39,7 @@
         </div>
     </section>
 
-    <x-countdown />
+    <x-countdown :deadline="$setting->event_deadline" />
 
     <x-pricing />
 
