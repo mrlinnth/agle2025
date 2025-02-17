@@ -4,6 +4,7 @@
             <h2 class="text-xl font-bold leading-8">
                 Conference Location
             </h2>
+            <p><strong>AIT Conference Center</strong></p>
             <p>58 หมู่​9 Phahonyothin Rd, Khlong Nueng, Khlong Luang District, Pathum Thani 12120, Thailand</p>
         </div>
         <div>

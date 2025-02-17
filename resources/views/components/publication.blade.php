@@ -5,17 +5,11 @@
                 Publication <strong class="font-extrabold text-primary">Opportunities</strong>
             </h1>
 
-            <p class="mt-4 max-w-xl">
+            <p class="mt-4">
                 The conference will collaborate with the “Journal of Rural Studies” and “Research in
-                Globalization” Elsevier to publish a special issue. The best abstracts will be invited to
+                Globalization” Elsevier to publish a special issue.<br />The best abstracts will be invited to
                 submit full papers for consideration in this special issue.
             </p>
-
-            <div class="mt-8 flex flex-wrap justify-center gap-4">
-                <a class="btn-primary" href="#">
-                    Submit Your Paper
-                </a>
-            </div>
         </div>
     </div>
 </section>

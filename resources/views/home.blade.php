@@ -19,15 +19,14 @@
             <div class="-mx-4 mt-12 md:mt-20 flex flex-wrap items-center justify-center">
                 <div class="w-full px-4 py-8">
                     <div class="hero-content space-y-6 wow fadeInUp mx-auto text-center text-white" data-wow-delay=".2s">
-                        <h1 class="leading-snug">
-                            International Geographical Union Commission on Agricultural Geography and Land
-                            Engineering (AGLE) Annual Conference 2025
+                        <h1 class="text-lg font-bold leading-snug">
+                            {{ $setting->event_name }}
                         </h1>
                         <h2 class="text-6xl font-extrabold leading-snug">
-                            "Innovation, Technological Advancement for Rural and Agricultural Resilience"
+                            {{ $setting->event_title }}
                         </h2>
-                        <p class="">
-                            November 05-08, 2025 - Bangkok, Thailand
+                        <p class="text-lg font-bold">
+                            {{ $setting->event_duration }} - {{ $setting->event_location }}
                         </p>
                     </div>
                 </div>
@@ -74,6 +73,6 @@
         </div>
     </section>
 
-    <x-countdown />
+    <x-countdown :deadline="$setting->event_deadline" />
 
 </x-layout>

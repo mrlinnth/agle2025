@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Setting;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -11,6 +12,7 @@ class ContactController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('contact');
+        $setting = Setting::firstOrFail();
+        return view('contact', compact('setting'));
     }
 }

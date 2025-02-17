@@ -3,7 +3,7 @@
         <div class="mx-auto max-w-xl text-center text-white">
             <h2 class="text-lg">Registration Deadline</h2>
             <p class="text-lg font-extrabold">
-                September 07, 2025
+                {{ $deadline }}
             </p>
             <h2 class="text-3xl font-extrabold sm:text-5xl my-4">
                 270 : 23 : 59 : 59

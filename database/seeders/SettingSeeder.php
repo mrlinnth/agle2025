@@ -15,7 +15,7 @@ class SettingSeeder extends Seeder
     {
         Setting::create([
             'event_name' => 'International Geographical Union Commission on Agricultural Geography and Land Engineering (AGLE) Annual Conference 2025',
-            'event_title' => '"Innovation, Technological Advancement for Rural and Agricultural Resilience"',
+            'event_title' => 'Innovation, Technological Advancement for Rural and Agricultural Resilience',
             'event_duration' => 'November 05-08, 2025',
             'event_location' => 'Bangkok, Thailand',
             'event_deadline' => '07 September 2025',
