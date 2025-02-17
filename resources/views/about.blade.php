@@ -1,12 +1,30 @@
 <x-layout>
     <x-breadcrumb>
-        About
+        Conference Details
     </x-breadcrumb>
 
     <section class="py-20 bg-gray-1" id="details">
         <div class="container">
-            <x-theme />
-            <x-agenda />
+            <div class="flex flex-col gap-8" id="dates">
+                <h3 class="text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">
+                    Conference Dates
+                </h3>
+                <table>
+                    <tr>
+                        <td>Oral/Poster Presentation sessions:</td>
+                        <td>5-6 November 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Fieldtrip:</td>
+                        <td>7-8 November 2025. The field trips will be organized to
+                            visit xxxxxxxxxx in the Saraburi, Lopburi and Kanchanaburi Provinces.</td>
+                    </tr>
+                    <tr>
+                        <td>Gala dinner Chao Phraya Cruise:</td>
+                        <td>5 November 2025</td>
+                    </tr>
+                </table>
+            </div>
             <x-location />
             <div class="flex flex-col gap-8" id="dates">
                 <h3 class="text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">

@@ -5,7 +5,7 @@
             'path' => '/',
         ],
         [
-            'title' => 'About',
+            'title' => 'Conference Details',
             'path' => '/about',
         ],
         [
