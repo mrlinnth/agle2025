@@ -168,7 +168,7 @@
                         </div>
                         <div>
                             <p class="text-sm text-dark-3">Will you be joining the Gala Dinner (Chao Phraya Cruise
-                                Dinner) at the end of Day 2 of the field trip?*</p>
+                                Dinner) on 05 November 2025?*</p>
                             <div>
                                 <input type="radio" id="dinner_yes" name="join_dinner" value="1" required />
                                 <label for="dinner_yes">Yes</label>
