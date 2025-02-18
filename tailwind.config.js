@@ -58,8 +58,8 @@ export default {
                 warning: "#FBBF24",
                 stroke: "#DFE4EA",
                 "gray-1": "#F9FAFB",
-                "gray-2": "#F3F4F6",
-                "gray-7": "#CED4DA",
+                "gray-2": "#CED4DA",
+                "gray-7": "#9CA3AF",
             },
             boxShadow: {
                 input: "0px 7px 20px rgba(0, 0, 0, 0.03)",

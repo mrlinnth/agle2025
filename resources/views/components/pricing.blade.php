@@ -73,16 +73,20 @@
                         </div>
                     </div>
                 </div>
-                <p class="font-bold text-primary my-4">The best abstracts submitted by early-stage researchers from the
-                    Global South will be selected for an
-                    award of registration fee waiver.</p>
-                <h3 class="text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">
-                    Field Trip Fee (Optional)
-                </h3>
-                <ul class="">
-                    <li>Two Days Field Trip: USD 100 (inlucding food and transportation)</li>
-                    <li>Gala Dinner: USD 55 (including transportation)</li>
-                </ul>
+                <div class="border bg-secondary p-4">
+                    <p class="font-bold text-white my-4">The best abstracts submitted by early-stage researchers from
+                        the Global South will be selected for an award of registration fee
+                        waiver.</p>
+                </div>
+                <div class="border bg-primary-fade p-10">
+                    <h3 class="text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">
+                        Field Trip Fee (Optional)
+                    </h3>
+                    <ul class="list-disc text-left">
+                        <li>Two Days Field Trip: USD 100 (including food and transportation)</li>
+                        <li>Gala Dinner: USD 55 (including transportation)</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

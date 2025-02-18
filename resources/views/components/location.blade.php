@@ -6,7 +6,7 @@
             </h2>
             <p><strong>Robert B Banks Auditorium, Asian Institute of
                     Technology (AIT CC)</strong></p>
-            <p>58 หมู่​9 Phahonyothin Rd, Khlong Nueng, Khlong Luang District, Pathum Thani 12120, Thailand</p>
+            <p>58 Moo 9, Phahonyothin Rd, Khlong Nueng, Khlong Luang District, Pathum Thani 12120, Thailand</p>
         </div>
         <div>
             <iframe class="w-full h-[300px]"
