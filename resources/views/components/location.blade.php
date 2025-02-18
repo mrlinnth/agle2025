@@ -1,7 +1,7 @@
-<div id="location" class="">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-10">
+<div id="location" class="pb-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="flex flex-col gap-4">
-            <h2 class="text-xl font-bold leading-8">
+            <h2 class="text-2xl font-extrabold leading-8">
                 Conference Location
             </h2>
             <p><strong>Robert B Banks Auditorium, Asian Institute of

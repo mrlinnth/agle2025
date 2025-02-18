@@ -13,13 +13,13 @@
     ],
 ])
 
-<section id="payment" class="py-32">
+<section id="payment" class="">
     <div class="container">
+        <h3 class="text-2xl font-extrabold leading-8">
+            Conference Fee
+        </h3>
         <div class="grid place-items-center">
             <div class="m-auto flex w-full flex-col items-center gap-4 text-center">
-                <h3 class="text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9">
-                    Conference Fee
-                </h3>
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="w-full bg-gray-50 shadow-sm">
                         <div><br></div>
@@ -74,7 +74,8 @@
                     </div>
                 </div>
                 <div class="border bg-secondary p-4">
-                    <p class="font-bold text-white my-4">The best abstracts submitted by early-stage researchers from
+                    <p class="font-bold text-white my-4">The best abstracts submitted by early-stage researchers
+                        from
                         the Global South will be selected for an award of registration fee
                         waiver.</p>
                 </div>

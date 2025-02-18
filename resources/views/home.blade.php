@@ -15,16 +15,16 @@
     <section id="home"
         class="text-center relative h-full lg:h-screen overflow-hidden bg-cover bg-no-repeat pt-[120px]"
         style="background-image: url('/assets/6.jpg');">
-        <p class="text-lg font-bold">
+        <p class="text-2xl font-extrabold">
             {!! nl2br(e($setting->event_name)) !!}
         </p>
-        <div class="mt-40 px-20">
-            <p class="text-6xl font-extrabold text-white [text-shadow:_0_2px_4px_rgb(251_191_36_/_0.7)]">
+        <div class="mt-20 px-10">
+            <p class="text-8xl font-extrabold text-white [text-shadow:_0_2px_4px_rgb(251_191_36_/_0.7)]">
                 {{ $setting->event_title }}
             </p>
         </div>
-        <div class="mt-40 px-20">
-            <p class="text-lg font-bold text-white  [text-shadow:_0_2px_4px_rgb(251_191_36_/_0.9)]">
+        <div class="mt-20 px-20">
+            <p class="text-2xl font-bold text-white  [text-shadow:_0_2px_4px_rgb(251_191_36_/_0.9)]">
                 {{ $setting->event_duration }} - {{ $setting->event_location }}
             </p>
         </div>
@@ -61,14 +61,15 @@
             </p>
 
             <x-theme />
-        </div>
-    </section>
 
-    <x-publication />
-
-    <section class="bg-gray-1">
-        <div class="container py-20">
-            <x-location />
+            <h2 class="my-4 text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
+                Publication Opportunities
+            </h2>
+            <p class="my-4 text-base leading-relaxed text-body-color text-justify">
+                The conference will collaborate with the “Journal of Rural Studies” (Elsevier) and “Research in
+                Globalization” (Elsevier) to publish a special issue on the conference paper.
+                The best abstracts will be invited to submit full papers for consideration in this special issue.
+            </p>
         </div>
     </section>
 

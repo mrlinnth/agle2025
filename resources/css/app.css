@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-secondary-light;
+    @apply bg-gray-1;
     font-family: "Nunito", sans-serif;
 }
 .dropdown:focus-within .dropdown-menu {
