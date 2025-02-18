@@ -13,24 +13,20 @@
 <x-layout>
 
     <section id="home"
-        class="relative h-full lg:h-screen overflow-hidden bg-cover bg-no-repeat pt-[120px] md:pt-[130px] lg:pt-[160px]"
+        class="text-center relative h-full lg:h-screen overflow-hidden bg-cover bg-no-repeat pt-[120px]"
         style="background-image: url('/assets/6.jpg');">
-        <div class="container backdrop-blur-sm [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)]">
-            <div class="-mx-4 mt-12 md:mt-20 flex flex-wrap items-center justify-center">
-                <div class="w-full px-4 py-8">
-                    <div class="hero-content space-y-6 wow fadeInUp mx-auto text-center text-white" data-wow-delay=".2s">
-                        <h1 class="text-lg font-bold leading-snug">
-                            {{ $setting->event_name }}
-                        </h1>
-                        <h2 class="text-6xl font-extrabold leading-snug">
-                            {{ $setting->event_title }}
-                        </h2>
-                        <p class="text-lg font-bold">
-                            {{ $setting->event_duration }} - {{ $setting->event_location }}
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <p class="text-lg font-bold">
+            {!! nl2br(e($setting->event_name)) !!}
+        </p>
+        <div class="mt-40 px-20">
+            <p class="text-6xl font-extrabold text-white [text-shadow:_0_2px_4px_rgb(251_191_36_/_0.7)]">
+                {{ $setting->event_title }}
+            </p>
+        </div>
+        <div class="mt-40 px-20">
+            <p class="text-lg font-bold text-white  [text-shadow:_0_2px_4px_rgb(251_191_36_/_0.9)]">
+                {{ $setting->event_duration }} - {{ $setting->event_location }}
+            </p>
         </div>
     </section>
 
