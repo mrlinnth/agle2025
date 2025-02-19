@@ -1,40 +1,10 @@
 @props([
     'sciTeams' => [
         [
-            'name' => 'Prof. Barbaros Gönençgil, Istanbul University, Turkey',
-            'description' =>
-                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'image' => '/assets/speakers/1.png',
-        ],
-        [
             'name' => 'Prof. Holly Barcus, Macalester College, USA',
             'description' =>
                 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             'image' => '/assets/speakers/2.png',
-        ],
-        [
-            'name' => 'Prof. Darren Smith, Loughborough University, UK',
-            'description' =>
-                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'image' => '/assets/speakers/3.jpg',
-        ],
-        [
-            'name' => 'Prof. Guy, Robinson, University of Adelaide, Australia',
-            'description' =>
-                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'image' => '/assets/speakers/4.jpg',
-        ],
-        [
-            'name' => 'Prof. Yansui Liu, Chinese Academy of Sciences, China',
-            'description' =>
-                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'image' => '/assets/speakers/5.jpg',
-        ],
-        [
-            'name' => 'Prof. Rajendra Shrestha, Asian Institute of Technology, Thailand',
-            'description' =>
-                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'image' => '/assets/speakers/6.jpeg',
         ],
         [
             'name' => 'Prof. Avishek Data, Asian Institute of Technology, Thailand',
@@ -43,16 +13,46 @@
             'image' => '/assets/speakers/7.jpg',
         ],
         [
-            'name' => 'Assoc. Prof. Thi Phuoc Lai Nguyen, Asian Institute of Technology, Thailand',
+            'name' => 'Prof. Barbaros Gönençgil, Istanbul University, Turkey',
             'description' =>
                 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            'image' => '/assets/speakers/8.jpg',
+            'image' => '/assets/speakers/1.png',
         ],
         [
             'name' => 'Assoc. Prof. Yuheng Li, Chinese Academy of Sciences, China',
             'description' =>
                 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             'image' => '/assets/speakers/9.jpg',
+        ],
+        [
+            'name' => 'Prof. Yansui Liu, Chinese Academy of Sciences, China',
+            'description' =>
+                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            'image' => '/assets/speakers/5.jpg',
+        ],
+        [
+            'name' => 'Assoc. Prof. Thi Phuoc Lai Nguyen, Asian Institute of Technology, Thailand',
+            'description' =>
+                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            'image' => '/assets/speakers/8.jpg',
+        ],
+        [
+            'name' => 'Prof. Guy, Robinson, University of Adelaide, Australia',
+            'description' =>
+                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            'image' => '/assets/speakers/4.jpg',
+        ],
+        [
+            'name' => 'Prof. Darren Smith, Loughborough University, UK',
+            'description' =>
+                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            'image' => '/assets/speakers/3.jpg',
+        ],
+        [
+            'name' => 'Prof. Rajendra Shrestha, Asian Institute of Technology, Thailand',
+            'description' =>
+                'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            'image' => '/assets/speakers/6.jpeg',
         ],
     ],
     'orgTeams' => [

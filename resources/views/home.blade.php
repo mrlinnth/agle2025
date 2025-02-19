@@ -12,21 +12,30 @@
 
 <x-layout>
 
-    <section id="home"
-        class="text-center relative h-full lg:h-screen overflow-hidden bg-cover bg-no-repeat pt-[120px]"
+    <section id="home" class="relative h-full lg:h-screen overflow-hidden bg-cover bg-no-repeat pt-[100px]"
         style="background-image: url('/assets/6.jpg');">
-        <p class="text-2xl font-extrabold">
-            {!! nl2br(e($setting->event_name)) !!}
-        </p>
-        <div class="mt-20 px-10">
-            <p class="text-8xl font-extrabold text-white [text-shadow:_0_2px_4px_rgb(251_191_36_/_0.7)]">
-                {{ $setting->event_title }}
-            </p>
-        </div>
-        <div class="mt-20 px-20">
-            <p class="text-2xl font-bold text-white  [text-shadow:_0_2px_4px_rgb(251_191_36_/_0.9)]">
-                {{ $setting->event_duration }} - {{ $setting->event_location }}
-            </p>
+        <div class="flex flex-row-reverse">
+            <div class="px-10 py-5 w-3/4 h-full lg:h-screen bg-cover bg-white/30 backdrop-blur-sm">
+                <div class="h-full grid grid-cols-1 gap-4 content-stretch">
+                    <div>
+                        <p class="text-xl font-extrabold">
+                            {!! nl2br(e($setting->event_name)) !!}
+                        </p>
+                    </div>
+                    <div class="">
+                        <p
+                            class="text-7xl font-extrabold text-primary-dark [text-shadow:_0_3px_5px_rgb(192_204_161_/_0.7)]">
+                            {{ $setting->event_title }}
+                        </p>
+                    </div>
+                    <div class="pb-10">
+                        <p class="text-xl font-bold">
+                            {{ $setting->event_duration }}
+                        </p>
+                        <p class="text-xl font-bold">{{ $setting->event_location }}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
