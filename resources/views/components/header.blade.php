@@ -28,7 +28,7 @@
 ])
 
 
-<header class="ud-header bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
+<header class="ud-header h-[100px] bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
     <div class="container">
         <div class="flex h-24 items-center justify-between">
             <div class="md:flex md:items-center md:gap-12">

@@ -65,12 +65,17 @@
                             <li>Swift Code: SICOTHBK</li>
                         </ol>
                     </div>
+                    <p class="text-red-500">*** Please write the payment note: <strong class="font-bold">"Payment for
+                            AGLE
+                            Conference (2025)"</strong> when
+                        transferring the fees. ***
+                    </p>
                     <div>
                         <h2 class="mb-2 font-bold">Cancellation Policy</h2>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis numquam adipisci
-                            consequatur placeat corrupti iusto doloribus ab nihil maiores aliquam vel voluptatem
-                            magnam deserunt, consectetur voluptas. Ipsam vitae tempore voluptates!
+                            All fees are non-refundable if a registrant is unable to attend the conference, the field
+                            trip and gala dinner for any reason. We appreciate your understanding of this policy, which
+                            helps us maintain the overall success of the event.
                         </p>
                     </div>
                 </div>
