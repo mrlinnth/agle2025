@@ -24,7 +24,7 @@
                 <h2 class="heading-2">
                     Conference Dates
                 </h2>
-                <div class="mt-4 grid grid-cols-2 gap-4 w-full md:w-2/3">
+                <div class="mt-4 grid grid-cols-1 md:grid-cols-2 md:gap-4 w-full md:w-2/3">
                     <div class="bg-secondary-fade p-4 rounded-xl my-4 shadow-md w-full">
                         <h3 class="font-bold text-lg">Oral/Poster Presentation Sessions</h3>
                     </div>
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-4 w-full md:w-2/3">
+                <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 w-full md:w-2/3">
                     <div class="bg-primary-fade p-4 rounded-xl my-4 shadow-md w-full">
                         <h3 class="font-bold text-lg">Field Trip to Rural Thailand</h3>
                     </div>
@@ -75,7 +75,7 @@
                                 EcoSmart Farm
                                 Systems, Circular Farm Models.</strong></li>
                 </div>
-                <div class="grid grid-cols-2 gap-4 w-full md:w-2/3">
+                <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 w-full md:w-2/3">
                     <div class="bg-gray-2 p-4 rounded-xl my-4 shadow-md w-full">
                         <h3 class="font-bold text-lg">Gala dinner Chao Phraya Cruise</h3>
                     </div>
