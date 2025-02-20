@@ -18,23 +18,23 @@
             <div class="px-10 py-5 w-3/4 h-full lg:h-screen bg-cover bg-white/30 backdrop-blur-sm">
                 <div class="h-full grid grid-cols-1 gap-4 content-stretch">
                     <div>
-                        <p class="text-2xl font-extrabold">
+                        <p class="text-xl font-extrabold">
                             International Geographical Union (IGU) Commission on Agricultural Geography and Land
                             Engineering (AGLE)
                         </p>
-                        <p class="text-3xl font-extrabold">Annual Conference 2025</p>
+                        <p class="text-2xl font-extrabold">Annual Conference 2025</p>
                     </div>
                     <div class="">
                         <p
-                            class="text-8xl font-extrabold text-primary-dark [text-shadow:_0_3px_5px_rgb(192_204_161_/_0.7)]">
+                            class="text-6xl font-extrabold text-primary-dark [text-shadow:_0_3px_5px_rgb(192_204_161_/_0.7)]">
                             {{ $setting->event_title }}
                         </p>
                     </div>
                     <div class="pb-10">
-                        <p class="text-2xl font-bold">
+                        <p class="text-xl font-extrabold">
                             {{ $setting->event_duration }}
                         </p>
-                        <p class="text-2xl font-bold">{{ $setting->event_location }}</p>
+                        <p class="text-xl font-extrabold">{{ $setting->event_location }}</p>
                     </div>
                 </div>
             </div>

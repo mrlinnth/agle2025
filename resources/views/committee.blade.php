@@ -1,34 +1,9 @@
 @props([
     'sciTeams' => [
         [
-            'name' => 'Prof. Barbaros GÖNENÇGIL',
-            'description' => 'Istanbul University, Turkey',
-            'image' => '/assets/speakers/1.png',
-        ],
-        [
             'name' => 'Prof. Holly BARCUS',
             'description' => 'Macalester College, USA',
             'image' => '/assets/speakers/2.png',
-        ],
-        [
-            'name' => 'Prof. Darren SMITH',
-            'description' => 'Loughborough University, UK',
-            'image' => '/assets/speakers/3.jpg',
-        ],
-        [
-            'name' => 'Prof. Guy, ROBINSON',
-            'description' => 'University of Adelaide, Australia',
-            'image' => '/assets/speakers/4.jpg',
-        ],
-        [
-            'name' => 'Prof. Yansui LIU',
-            'description' => 'Chinese Academy of Sciences, China',
-            'image' => '/assets/speakers/5.jpg',
-        ],
-        [
-            'name' => 'Prof. Rajendra SHRESTHA',
-            'description' => 'Asian Institute of Technology, Thailand',
-            'image' => '/assets/speakers/6.jpeg',
         ],
         [
             'name' => 'Prof. Avishek DATA',
@@ -36,14 +11,39 @@
             'image' => '/assets/speakers/7.jpg',
         ],
         [
+            'name' => 'Prof. Barbaros GÖNENÇGIL',
+            'description' => 'Istanbul University, Turkey',
+            'image' => '/assets/speakers/1.png',
+        ],
+        [
+            'name' => 'Assoc. Prof. Yuheng LI',
+            'description' => 'Chinese Academy of Sciences, China',
+            'image' => '/assets/speakers/9.jpg',
+        ],
+        [
+            'name' => 'Prof. Yansui LIU',
+            'description' => 'Chinese Academy of Sciences, China',
+            'image' => '/assets/speakers/5.jpg',
+        ],
+        [
             'name' => 'Assoc. Prof. Thi Phuoc Lai NGUYEN',
             'description' => 'Asian Institute of Technology, Thailand',
             'image' => '/assets/speakers/8.jpg',
         ],
         [
-            'name' => 'Assoc. Prof. Yuheng Li',
-            'description' => 'Chinese Academy of Sciences, China',
-            'image' => '/assets/speakers/9.jpg',
+            'name' => 'Prof. Guy, ROBINSON',
+            'description' => 'University of Adelaide, Australia',
+            'image' => '/assets/speakers/4.jpg',
+        ],
+        [
+            'name' => 'Prof. Rajendra SHRESTHA',
+            'description' => 'Asian Institute of Technology, Thailand',
+            'image' => '/assets/speakers/6.jpeg',
+        ],
+        [
+            'name' => 'Prof. Darren SMITH',
+            'description' => 'Loughborough University, UK',
+            'image' => '/assets/speakers/3.jpg',
         ],
     ],
     'orgTeams' => [
