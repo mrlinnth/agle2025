@@ -1,9 +1,9 @@
 <div id="location" class="pb-10">
+    <h2 class="text-2xl font-extrabold leading-8">
+        Conference Location
+    </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="flex flex-col gap-4">
-            <h2 class="text-2xl font-extrabold leading-8">
-                Conference Location
-            </h2>
             <p><strong>Robert B Banks Auditorium, Asian Institute of
                     Technology (AIT CC)</strong></p>
             <p>58 Moo 9, Phahonyothin Rd, Khlong Nueng, Khlong Luang District, Pathum Thani 12120, Thailand</p>

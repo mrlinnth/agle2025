@@ -13,6 +13,7 @@ class AboutController extends Controller
     public function __invoke(Request $request)
     {
         $setting = Setting::firstOrFail();
+
         return view('about', compact('setting'));
     }
 }

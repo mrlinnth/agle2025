@@ -18,21 +18,23 @@
             <div class="px-10 py-5 w-3/4 h-full lg:h-screen bg-cover bg-white/30 backdrop-blur-sm">
                 <div class="h-full grid grid-cols-1 gap-4 content-stretch">
                     <div>
-                        <p class="text-xl font-extrabold">
-                            {!! nl2br(e($setting->event_name)) !!}
+                        <p class="text-2xl font-extrabold">
+                            International Geographical Union (IGU) Commission on Agricultural Geography and Land
+                            Engineering (AGLE)
                         </p>
+                        <p class="text-3xl font-extrabold">Annual Conference 2025</p>
                     </div>
                     <div class="">
                         <p
-                            class="text-7xl font-extrabold text-primary-dark [text-shadow:_0_3px_5px_rgb(192_204_161_/_0.7)]">
+                            class="text-8xl font-extrabold text-primary-dark [text-shadow:_0_3px_5px_rgb(192_204_161_/_0.7)]">
                             {{ $setting->event_title }}
                         </p>
                     </div>
                     <div class="pb-10">
-                        <p class="text-xl font-bold">
+                        <p class="text-2xl font-bold">
                             {{ $setting->event_duration }}
                         </p>
-                        <p class="text-xl font-bold">{{ $setting->event_location }}</p>
+                        <p class="text-2xl font-bold">{{ $setting->event_location }}</p>
                     </div>
                 </div>
             </div>
@@ -53,9 +55,9 @@
                 advance
                 innovation, technological development, and applications for rural sustainability and resilience. The
                 conference
-                is organized by the IGU Commission on Agricultural Geography and Land Engineering (AGLE) and hosted by
-                the
-                Asian Institute of Technology (AIT), Thailand.<br /><br>
+                is organized by the IGU Commission on Agricultural Geography and Land Engineering (AGLE) in
+                collaboration with
+                the Asian Institute of Technology (AIT), Thailand.<br /><br>
                 The conference will feature high-level, inclusive, evidence-based discussions on the current challenges
                 and
                 priorities related to advancing innovation and technology for long-term rural sustainability, with a
@@ -65,7 +67,7 @@
                 exchange ideas, and engage with globally renowned experts in the field. It also provides a platform to
                 enhance
                 participants&#39; expertise and professional recognition in rural sustainability.
-                Furthermore, the conference fosters cooperation and strengthens collaborative efforts to address rural
+                The conference fosters cooperation and strengthens collaborative efforts to address rural
                 challenges and promote sustainable development through innovative solutions.
             </p>
 
@@ -75,10 +77,9 @@
                 Publication Opportunities
             </h2>
             <p class="my-4 text-base leading-relaxed text-body-color text-justify">
-                The conference will collaborate with the “Journal of Rural Studies” (Elsevier) and “Research in
-                Globalization” (Elsevier) to publish a special issue on the conference paper.
-                The best abstracts will be invited to submit full papers for consideration in this special issue.
-            </p>
+                The conference will partner with Journal of Rural Studies, Elsevier and Research in Globalization,
+                Elsevier to publish special issues featuring select conference papers. The best abstracts will be
+                invited to submit full papers for consideration in these special issues.</p>
         </div>
     </section>
 

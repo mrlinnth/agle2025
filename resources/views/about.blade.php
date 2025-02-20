@@ -119,7 +119,7 @@
                         </div>
                     </div>
                     <div class="mt-8 flex gap-8 items-center">
-                        <div class="w-16 h-16 p-2 text-center rounded-lg bg-warning">
+                        <div class="w-16 h-16 p-2 text-center rounded-lg bg-secondary-fade">
                             <p class="font-semibold"><strong class="text-2xl">30</strong> June</p>
                         </div>
                         <div>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                     <div class="flex gap-8 items-center">
-                        <div class="w-16 h-16 p-2 text-center rounded-lg bg-warning">
+                        <div class="w-16 h-16 p-2 text-center rounded-lg bg-secondary-fade">
                             <p class="font-semibold"><strong class="text-2xl">07</strong> Sep</p>
                         </div>
                         <div>
@@ -204,9 +204,79 @@
                         </ul>
                     </div>
                 </div>
-                <p class="text-primary font-bold">*** The best abstracts submitted by early-stage researchers from the
+                <p class="text-primary text-lg font-extrabold">*** The best abstracts submitted by early-stage
+                    researchers from the
                     Global
                     South will be selected for an award of registration fee waiver ***</p>
+            </div>
+            <div class="my-10 flex flex-col gap-8">
+                <h2 class="text-2xl font-extrabold leading-8">
+                    Conference Location
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex flex-col gap-4">
+                        <p><strong>Robert B Banks Auditorium, Asian Institute of
+                                Technology (AIT CC)</strong></p>
+                        <p>58 Moo 9, Phahonyothin Rd, Khlong Nueng, Khlong Luang District, Pathum Thani 12120, Thailand
+                        </p>
+                    </div>
+                    <div>
+                        <iframe class="w-full h-[300px]"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4766.916176001432!2d100.6143444!3d14.078948100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e27f8bf182c5cf%3A0xa51b43c33d385a98!2sAIT%20Conference%20Center!5e1!3m2!1sen!2ssg!4v1739505506720!5m2!1sen!2ssg"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="my-10 flex flex-col gap-8">
+                <h2 class="text-2xl font-extrabold leading-8">
+                    Information on Accommodation and Transportation
+                </h2>
+                <div>
+                    <h3 class="text-xl font-extrabold leading-8">
+                        Accomodation
+                    </h3>
+                    <p>Participants are recommended to consider the following accommodations options where are easily
+                        accessible
+                        to Conference Location.</p>
+                    <div class="mt-2 grid grid-cols-1 gap-4">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-primary">1. AIT Conference Center</p>
+                            <p>Hotel and Dining Facility in AIT Campus [visit - <a
+                                    href="http://aitcc.ait.ac.th/accommodation/"
+                                    class="text-sm">http://aitcc.ait.ac.th/accommodation/</a>]</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="text-primary">2. Pinehurst Golf Club and Hotel</p>
+                            <p>Around 6 km to AIT [visit - <a href="https://www.pinehurst.co.th/en/hotel"
+                                    class="text-sm">https://www.pinehurst.co.th/en/hotel</a>]
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="text-primary">3. Novotel Bangkok Future Park Rangsit</p>
+                            <p>Around 12 km to AIT [visit - <a
+                                    href="https://novotelbangkokfutureparkrangsit.com/rooms-suites/"
+                                    class="text-sm">https://novotelbangkokfutureparkrangsit.com/rooms-suites/</a>]</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="mt-4 text-xl font-extrabold leading-8">
+                        Airport Transportation
+                    </h3>
+                    <div class="mt-2 grid grid-cols-1 gap-4">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-primary">1. Suvarnabhumi International Airport to AIT (around 60 km)</p>
+                            <p>Around 1 hr with city taxi (around USD25)</p>
+                            <p>No direct bus to campus</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="text-primary">2. Don Mueang International Airport to AIT (around 60 km)</p>
+                            <p>Around 25 mins with city taxi (around USD15)</p>
+                            <p>Around 2 hrs with public transportation (Bus no - 510)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -23,9 +23,10 @@
                     <p>
                         Each abstract should be no longer than <strong>250 words</strong> and must include <strong>6
                             keywords</strong>. The conference
-                        will collaborate with the “Journal of Rural Studies” (Elsevier) and “Research in Globalization”
-                        (Elsevier) to publish a special issue. The best abstracts will be invited to submit full
-                        papers for consideration in this special issue.
+                        will partner with Journal of Rural Studies, Elsevier and Research in Globalization,
+                        Elsevier to publish special issues featuring selected conference papers. The best abstracts will
+                        be invited to submit full
+                        papers for consideration in these special issues.
                     </p>
                     <h3 class="mt-4 font-bold">Submission Deadline</h3>
                     <p>May 30, 2025</p>

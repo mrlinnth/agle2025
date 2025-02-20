@@ -13,6 +13,7 @@ class ContactController extends Controller
     public function __invoke(Request $request)
     {
         $setting = Setting::firstOrFail();
+
         return view('contact', compact('setting'));
     }
 }
