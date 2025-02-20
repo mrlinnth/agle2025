@@ -25,3 +25,6 @@ body {
 .grecaptcha-badge {
     visibility: hidden !important;
 }
+.heading-2 {
+    @apply text-3xl font-extrabold leading-8;
+}

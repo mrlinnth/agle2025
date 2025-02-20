@@ -43,7 +43,7 @@
 
     <section class="bg-gray-1">
         <div class="container py-20">
-            <h2 class="text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
+            <h2 class="heading-2 sm:text-3xl sm:leading-9">
                 About The Conference
             </h2>
             <p class="my-4 text-base leading-relaxed text-body-color text-justify">
@@ -73,7 +73,7 @@
 
             <x-theme />
 
-            <h2 class="my-4 text-2xl font-extrabold leading-8 sm:text-3xl sm:leading-9">
+            <h2 class="my-4 heading-2 sm:text-3xl sm:leading-9">
                 Publication Opportunities
             </h2>
             <p class="my-4 text-base leading-relaxed text-body-color text-justify">

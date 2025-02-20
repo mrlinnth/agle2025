@@ -21,7 +21,7 @@
     <section class="" id="details">
         <div class="container">
             <div class="my-10 flex flex-col">
-                <h2 class="text-2xl font-extrabold leading-8">
+                <h2 class="heading-2">
                     Conference Dates
                 </h2>
                 <div class="mt-4 grid grid-cols-2 gap-4 w-full md:w-2/3">
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="my-10 flex flex-col gap-8">
-                <h2 class="text-2xl font-extrabold leading-8">
+                <h2 class="heading-2">
                     Important Dates
                 </h2>
                 <div class="grid grid-cols-1 gap-4">
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div class="my-10 flex flex-col gap-8">
-                <h2 class="text-2xl font-extrabold leading-8">
+                <h2 class="heading-2">
                     Conference Fee
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full md:w-2/3">
@@ -210,7 +210,7 @@
                     South will be selected for an award of registration fee waiver ***</p>
             </div>
             <div class="my-10 flex flex-col gap-8">
-                <h2 class="text-2xl font-extrabold leading-8">
+                <h2 class="heading-2">
                     Conference Location
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -229,7 +229,7 @@
                 </div>
             </div>
             <div class="my-10 flex flex-col gap-8">
-                <h2 class="text-2xl font-extrabold leading-8">
+                <h2 class="heading-2">
                     Information on Accommodation and Transportation
                 </h2>
                 <div>
