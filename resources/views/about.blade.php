@@ -147,17 +147,18 @@
                         <div class="bg-yellow-300 p-2 rounded-xl w-full h-20 flex flex-col items-center justify-center">
                             <h3 class="font-bold text-lg">Participants Type</h3>
                         </div>
-                        <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">Academia/Policy Makers/ Practitioners</h3>
+                        <div class="bg-yellow-200 p-2 rounded-xl w-full flex items-center">
+                            <h3 class="pl-2">&bull; Academia/Policy Makers/ Practitioners</h3>
                         </div>
-                        <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">Researchers from the Global South</h3>
+                        <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center">
+                            <h3 class="pl-4">&bull; Researchers from the Global South</h3>
                         </div>
-                        <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">Early career researchers (PhD Candidates) and students</h3>
+                        <div class="bg-yellow-200 p-2 rounded-xl w-full flex items-center">
+                            <h3 class="pl-2">&bull; Early career researchers (PhD Candidates) and students</h3>
                         </div>
-                        <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">Early career researchers (PhD Candidates) and students from the Global
+                        <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center">
+                            <h3 class="pl-4">&bull; Early career researchers (PhD Candidates) and students from the
+                                Global
                                 South</h3>
                         </div>
                     </div>
@@ -166,13 +167,13 @@
                             <h3 class="font-bold text-lg">Early Bird</h3>
                             <p class="">(Until July 31, 2025)</p>
                         </div>
-                        <div class="bg-teal-100 p-2 rounded-xl w-full flex items-center justify-center">
+                        <div class="bg-teal-200 p-2 rounded-xl w-full flex items-center justify-center">
                             <h3 class="">USD 300</h3>
                         </div>
                         <div class="bg-teal-100 p-2 rounded-xl w-full flex items-center justify-center">
                             <h3 class="">USD 250</h3>
                         </div>
-                        <div class="bg-teal-100 p-2 rounded-xl w-full flex items-center justify-center">
+                        <div class="bg-teal-200 p-2 rounded-xl w-full flex items-center justify-center">
                             <h3 class="">USD 200</h3>
                         </div>
                         <div class="bg-teal-100 p-2 rounded-xl w-full flex items-center justify-center">
@@ -183,13 +184,13 @@
                         <div class="bg-blue-300 p-2 rounded-xl w-full h-20 flex flex-col items-center justify-center">
                             <h3 class="font-bold text-lg">Regular</h3>
                         </div>
-                        <div class="bg-blue-100 p-2 rounded-xl w-full flex items-center justify-center">
+                        <div class="bg-blue-200 p-2 rounded-xl w-full flex items-center justify-center">
                             <h3 class="">USD 350</h3>
                         </div>
                         <div class="bg-blue-100 p-2 rounded-xl w-full flex items-center justify-center">
                             <h3 class="">USD 300</h3>
                         </div>
-                        <div class="bg-blue-100 p-2 rounded-xl w-full flex items-center justify-center">
+                        <div class="bg-blue-200 p-2 rounded-xl w-full flex items-center justify-center">
                             <h3 class="">USD 250</h3>
                         </div>
                         <div class="bg-blue-100 p-2 rounded-xl w-full flex items-center justify-center">
