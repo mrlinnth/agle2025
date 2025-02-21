@@ -3,7 +3,7 @@
         <div class="mx-auto max-w-xl text-center text-white">
             <h2 class="text-lg">Days to Registration</h2>
             <p class="text-lg font-extrabold">
-                07 September, 2025
+                15 September, 2025
             </p>
             <h2 class="text-3xl font-extrabold sm:text-5xl my-4">
                 201 : 23 : 59 : 59

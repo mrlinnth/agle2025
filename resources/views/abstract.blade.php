@@ -29,7 +29,7 @@
                         papers for consideration in these special issues.
                     </p>
                     <h3 class="mt-4 font-bold">Submission Deadline</h3>
-                    <p>May 30, 2025</p>
+                    <p>June 30, 2025</p>
                 </div>
                 <div class="basis-1 md:basis-2/3">
                     <form method="POST" action="{{ route('submissions.store') }}" enctype="multipart/form-data"

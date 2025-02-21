@@ -19,15 +19,15 @@
         <div class="container">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-2 text-center">
                 <div>
-                    <h2 class="text-lg">Registration Deadline</h2>
+                    <h2 class="text-lg">Early Bird Registration Deadline</h2>
                     <p class="text-lg font-extrabold text-primary">
-                        September 7, 2025 (Sunday)
+                        July 31, 2025
                     </p>
                 </div>
                 <div>
-                    <h2 class="text-lg">Early Bird Registration Deadline</h2>
+                    <h2 class="text-lg">Registration Deadline</h2>
                     <p class="text-lg font-extrabold text-primary">
-                        June 30, 2025 (Monday)
+                        September 15, 2025
                     </p>
                 </div>
             </div>
@@ -187,17 +187,28 @@
                         <h2 class="mb-2 font-bold">Payment Information</h2>
                         <div class="flex flex-col space-y-2 text-xs text-dark-3">
                             <p class="">
-                                <strong>1 - Conference</strong>
+                                <strong>1 - Regular Registration Fee</strong>
                             </p>
                             <ul class="ml-8  list-disc">
-                                <li>Regular registration Fee : USD 400, (Researchers from the Global South: USD 350.
-                                    Students: USD 250, Students from Global South: USD 170)</li>
-                                <li>Early Bird registration (by June 30, 2025) : USD 300, (Researchers from the Global
-                                    South: USD 250. Students: USD 200, Students from Global South: USD 150)</li>
+                                <li>Academia/Policy Makers/ Practitioners : USD 350</li>
+                                <li>Researchers from the Global South: USD 300</li>
+                                <li>Early career researchers (PhD Candidates) and students: USD 250</li>
+                                <li>Early career researchers (PhD Candidates) and students from the Global South: USD
+                                    200</li>
                             </ul>
-                            <p class=""><strong>2 - Field Trip</strong>: USD 50 for one day and USD 100
+                            <p class="">
+                                <strong>2 - Early Bird Registration Fee (by July 31, 2025)</strong>
+                            </p>
+                            <ul class="ml-8  list-disc">
+                                <li>Academia/Policy Makers/ Practitioners : USD 300</li>
+                                <li>Researchers from the Global South: USD 250</li>
+                                <li>Early career researchers (PhD Candidates) and students: USD 200</li>
+                                <li>Early career researchers (PhD Candidates) and students from the Global South: USD
+                                    150</li>
+                            </ul>
+                            <p class=""><strong>3 - Field Trip</strong>: USD 50 for one day and USD 100
                                 for two days</p>
-                            <p class=""><strong>3 - Gala Dinner</strong>: USD 55 (including
+                            <p class=""><strong>4 - Gala Dinner</strong>: USD 55 (including
                                 transportation from AIT)</p>
                         </div>
                         <div>
