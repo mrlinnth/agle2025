@@ -138,28 +138,14 @@
                     </div>
                 </div>
             </div>
-            <div class="my-10 flex flex-col gap-8">
-                <h2 class="heading-2">
+            <div class="my-10 flex flex-col gap-4">
+                <h2 class="mb-4 heading-2">
                     Conference Fee
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
+                <div class="mb-4 grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
                     <div class="col-span-2 flex flex-col gap-4">
                         <div class="bg-yellow-300 p-2 rounded-xl w-full h-20 flex flex-col items-center justify-center">
                             <h3 class="font-bold text-lg">Participants Type</h3>
-                        </div>
-                        <div class="bg-yellow-200 p-2 rounded-xl w-full flex items-center">
-                            <h3 class="pl-2">&bull; Academia/Policy Makers/ Practitioners</h3>
-                        </div>
-                        <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center">
-                            <h3 class="pl-4">&bull; Researchers from the Global South</h3>
-                        </div>
-                        <div class="bg-yellow-200 p-2 rounded-xl w-full flex items-center">
-                            <h3 class="pl-2">&bull; Early career researchers (PhD Candidates) and students</h3>
-                        </div>
-                        <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center">
-                            <h3 class="pl-4">&bull; Early career researchers (PhD Candidates) and students from the
-                                Global
-                                South</h3>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
@@ -167,44 +153,89 @@
                             <h3 class="font-bold text-lg">Early Bird</h3>
                             <p class="">(Until July 31, 2025)</p>
                         </div>
-                        <div class="bg-teal-200 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 300</h3>
-                        </div>
-                        <div class="bg-teal-100 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 250</h3>
-                        </div>
-                        <div class="bg-teal-200 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 200</h3>
-                        </div>
-                        <div class="bg-teal-100 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 150</h3>
-                        </div>
                     </div>
                     <div class="flex flex-col gap-4">
                         <div class="bg-blue-300 p-2 rounded-xl w-full h-20 flex flex-col items-center justify-center">
                             <h3 class="font-bold text-lg">Regular</h3>
                         </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
+                    <div class="col-span-2 flex flex-col gap-4">
+                        <div class="bg-yellow-200 p-2 rounded-xl w-full flex items-center">
+                            <h3 class="pl-2">&bull; Academia/Policy Makers/ Practitioners</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="bg-teal-200 p-2 rounded-xl w-full flex items-center justify-center">
+                            <h3 class="">USD 300</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
                         <div class="bg-blue-200 p-2 rounded-xl w-full flex items-center justify-center">
                             <h3 class="">USD 350</h3>
                         </div>
+                    </div>
+                </div>
+                <div class="mb-4 grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
+                    <div class="col-span-2 flex flex-col gap-4">
+                        <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center">
+                            <h3 class="pl-4">&bull; Researchers from the Global South</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="bg-teal-100 p-2 rounded-xl w-full flex items-center justify-center">
+                            <h3 class="">USD 250</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
                         <div class="bg-blue-100 p-2 rounded-xl w-full flex items-center justify-center">
                             <h3 class="">USD 300</h3>
                         </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
+                    <div class="col-span-2 flex flex-col gap-4">
+                        <div class="bg-yellow-200 p-2 rounded-xl w-full flex items-center">
+                            <h3 class="pl-2">&bull; Early career researchers (PhD Candidates) and students</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="bg-teal-200 p-2 rounded-xl w-full flex items-center justify-center">
+                            <h3 class="">USD 200</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
                         <div class="bg-blue-200 p-2 rounded-xl w-full flex items-center justify-center">
                             <h3 class="">USD 250</h3>
                         </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
+                    <div class="col-span-2 flex flex-col gap-4">
+                        <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center">
+                            <h3 class="pl-4">&bull; Early career researchers (PhD Candidates) and students from the
+                                Global
+                                South</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <div class="bg-teal-100 p-2 rounded-xl w-full flex items-center justify-center">
+                            <h3 class="">USD 150</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
                         <div class="bg-blue-100 p-2 rounded-xl w-full flex items-center justify-center">
                             <h3 class="">USD 200</h3>
                         </div>
                     </div>
-
-                    <div class="bg-gray-2 p-4 rounded-xl md:col-span-4 flex flex-col">
-                        <h3 class="font-bold text-lg">Optional</h3>
-                        <ul class="list-disc ml-4">
-                            <li>Two-Day Field Trip - USD 100 (including food and transportation)</li>
-                            <li>Gala Dinner - USD 55 (includng transportation)</li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="bg-gray-2 p-4 rounded-xl flex flex-col">
+                    <h3 class="font-bold text-lg">Optional</h3>
+                    <ul class="list-disc ml-4">
+                        <li>Two-Day Field Trip - USD 100 (including food and transportation)</li>
+                        <li>Gala Dinner - USD 55 (includng transportation)</li>
+                    </ul>
                 </div>
                 <p class="text-primary text-lg font-extrabold text-justify">*** The best abstracts submitted by
                     early-stage
