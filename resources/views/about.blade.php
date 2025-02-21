@@ -143,7 +143,7 @@
                     Conference Fee
                 </h2>
                 <div class="mb-4 grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
-                    <div class="col-span-2 flex flex-col gap-4">
+                    <div class="md:col-span-2 flex flex-col gap-4">
                         <div class="bg-yellow-300 p-2 rounded-xl w-full h-20 flex flex-col items-center justify-center">
                             <h3 class="font-bold text-lg">Participants Type</h3>
                         </div>
@@ -161,7 +161,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
-                    <div class="col-span-2 flex flex-col gap-4">
+                    <div class="md:col-span-2 flex flex-col gap-4">
                         <div class="bg-yellow-200 p-2 rounded-xl w-full flex items-center">
                             <h3 class="pl-2">&bull; Academia/Policy Makers/ Practitioners</h3>
                         </div>
@@ -178,7 +178,7 @@
                     </div>
                 </div>
                 <div class="mb-4 grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
-                    <div class="col-span-2 flex flex-col gap-4">
+                    <div class="md:col-span-2 flex flex-col gap-4">
                         <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center">
                             <h3 class="pl-4">&bull; Researchers from the Global South</h3>
                         </div>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
-                    <div class="col-span-2 flex flex-col gap-4">
+                    <div class="md:col-span-2 flex flex-col gap-4">
                         <div class="bg-yellow-200 p-2 rounded-xl w-full flex items-center">
                             <h3 class="pl-2">&bull; Early career researchers (PhD Candidates) and students</h3>
                         </div>
@@ -212,7 +212,7 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
-                    <div class="col-span-2 flex flex-col gap-4">
+                    <div class="md:col-span-2 flex flex-col gap-4">
                         <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center">
                             <h3 class="pl-4">&bull; Early career researchers (PhD Candidates) and students from the
                                 Global
