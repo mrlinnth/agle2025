@@ -4,6 +4,10 @@ namespace App\Filament\Pages;
 
 use App\Models\Setting;
 use Filament\Actions\Action;
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\Fieldset;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
@@ -33,9 +37,63 @@ class Settings extends Page implements HasForms
     {
         return $form
             ->schema([
-                TextInput::make('name')
-                    ->required()
-                    ->maxLength(255),
+                Fieldset::make('General')
+                    ->schema([
+                        TextInput::make('name')
+                            ->required()
+                            ->maxLength(255),
+                        TextInput::make('noti_email')
+                            ->required()
+                            ->maxLength(255),
+                        FileUpload::make('logo')
+                            ->disk('local')
+                            ->directory('logos')
+                            ->visibility('public')
+                            ->downloadable()
+                            ->deletable(false)
+                            ->required(),
+                    ])
+                    ->columns(2),
+                Fieldset::make('Contact')
+                    ->schema([
+                        Textarea::make('contact.map')
+                            ->required()
+                            ->maxLength(255),
+                        Textarea::make('contact.address')
+                            ->required()
+                            ->maxLength(255),
+                        TextInput::make('contact.phone')
+                            ->required()
+                            ->maxLength(255),
+                        TextInput::make('contact.email')
+                            ->required()
+                            ->maxLength(255),
+                    ])
+                    ->columns(2),
+                Fieldset::make('Countdown')
+                    ->schema([
+                        TextInput::make('countdown.title')
+                            ->required()
+                            ->maxLength(255),
+                        DatePicker::make('countdown.date')
+                            ->required(),
+                    ])
+                    ->columns(2),
+                Fieldset::make('Footer')
+                    ->schema([
+                        FileUpload::make('footer.center_logos')
+                            ->multiple()
+                            ->disk('local')
+                            ->directory('logos')
+                            ->visibility('public')
+                            ->downloadable()
+                            ->deletable(false)
+                            ->required(),
+                        TextInput::make('footer.end_logo')
+                            ->required()
+                            ->maxLength(255),
+                    ])
+                    ->columns(2),
             ])
             ->statePath('data');
     }

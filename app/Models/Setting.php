@@ -7,4 +7,18 @@ use Illuminate\Database\Eloquent\Model;
 class Setting extends Model
 {
     protected $guarded = [];
+
+    protected function casts(): array
+    {
+        return [
+            'countdown' => 'array',
+            'contact' => 'array',
+            'footer' => 'array',
+            'home' => 'array',
+            'conference' => 'array',
+            'committees' => 'array',
+            'abstract' => 'array',
+            'registration' => 'array',
+        ];
+    }
 }
