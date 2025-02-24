@@ -48,7 +48,7 @@ class Settings extends Page implements HasForms
                         FileUpload::make('logo')
                             ->disk('local')
                             ->directory('logos')
-                            ->visibility('public')
+                            ->visibility('private')
                             ->downloadable()
                             ->deletable(false)
                             ->required(),
@@ -85,13 +85,17 @@ class Settings extends Page implements HasForms
                             ->multiple()
                             ->disk('local')
                             ->directory('logos')
-                            ->visibility('public')
+                            ->visibility('private')
                             ->downloadable()
                             ->deletable(false)
                             ->required(),
-                        TextInput::make('footer.end_logo')
-                            ->required()
-                            ->maxLength(255),
+                        FileUpload::make('footer.end_logo')
+                            ->disk('local')
+                            ->directory('logos')
+                            ->visibility('private')
+                            ->downloadable()
+                            ->deletable(false)
+                            ->required(),
                     ])
                     ->columns(2),
             ])
