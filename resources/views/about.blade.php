@@ -234,7 +234,7 @@
                     <h3 class="font-bold text-lg">Optional</h3>
                     <ul class="list-disc ml-4">
                         <li>Two-Day Field Trip - USD 100 (including food and transportation)</li>
-                        <li>Gala Dinner - USD 55 (includng transportation)</li>
+                        <li>Gala Dinner - USD 55 (including transportation)</li>
                     </ul>
                 </div>
                 <p class="text-primary text-lg font-extrabold text-justify">*** The best abstracts submitted by
@@ -267,7 +267,7 @@
                 </h2>
                 <div>
                     <h3 class="text-xl font-extrabold leading-8">
-                        Accomodation
+                        Accommodation
                     </h3>
                     <p>Participants are recommended to consider the following accommodations options where are easily
                         accessible
@@ -304,7 +304,7 @@
                             <p>No direct bus to campus</p>
                         </div>
                         <div class="flex flex-col gap-2">
-                            <p class="text-primary">2. Don Mueang International Airport to AIT (around 60 km)</p>
+                            <p class="text-primary">2. Don Mueang International Airport to AIT (around 23 km)</p>
                             <p>Around 25 mins with city taxi (around USD15)</p>
                             <p>Around 2 hrs with public transportation (Bus no - 510)</p>
                         </div>

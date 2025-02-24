@@ -3,7 +3,7 @@
         [
             'name' => 'Prof. Holly BARCUS',
             'description' => 'Macalester College, USA',
-            'image' => '/assets/speakers/2.png',
+            'image' => '/assets/speakers/2.jpg',
         ],
         [
             'name' => 'Prof. Avishek DATA',
@@ -13,17 +13,17 @@
         [
             'name' => 'Prof. Barbaros GÖNENÇGIL',
             'description' => 'Istanbul University, Turkey',
-            'image' => '/assets/speakers/1.png',
-        ],
-        [
-            'name' => 'Assoc. Prof. Yuheng LI',
-            'description' => 'Chinese Academy of Sciences, China',
-            'image' => '/assets/speakers/9.jpg',
+            'image' => '/assets/speakers/1.jpg',
         ],
         [
             'name' => 'Prof. Yansui LIU',
             'description' => 'Chinese Academy of Sciences, China',
             'image' => '/assets/speakers/5.jpg',
+        ],
+        [
+            'name' => 'Assoc. Prof. Yuheng LI',
+            'description' => 'Chinese Academy of Sciences, China',
+            'image' => '/assets/speakers/9.jpg',
         ],
         [
             'name' => 'Assoc. Prof. Thi Phuoc Lai NGUYEN',
@@ -38,7 +38,7 @@
         [
             'name' => 'Prof. Rajendra SHRESTHA',
             'description' => 'Asian Institute of Technology, Thailand',
-            'image' => '/assets/speakers/6.jpeg',
+            'image' => '/assets/speakers/6.jpg',
         ],
         [
             'name' => 'Prof. Darren SMITH',
@@ -82,7 +82,7 @@
                             data-wow-delay=".1s">
                             <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
                                 <img src="{{ $team['image'] }}" alt="team image"
-                                    class="h-[120px] w-[120px] rounded-full" />
+                                    class="h-[120px] w-[120px] rounded border" />
                             </div>
                             <div class="text-center">
                                 <h4 class="mb-1 text-lg font-semibold">{{ $team['name'] }}</h4>
@@ -106,7 +106,7 @@
                             data-wow-delay=".1s">
                             <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
                                 <img src="{{ $team['image'] }}" alt="team image"
-                                    class="h-[120px] w-[120px] rounded-full" />
+                                    class="h-[120px] w-[120px] rounded border" />
                             </div>
                             <div class="text-center">
                                 <h4 class="mb-1 text-lg font-semibold">{{ $team['name'] }}</h4>

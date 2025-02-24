@@ -86,7 +86,7 @@
                                 id="other_author" />
                         </div>
                         <div>
-                            <p class="text-sm text-dark-3">Which option you would like to choose to present your paper?*
+                            <p class="text-sm text-dark-3">Which option would you like to choose to present your paper?*
                             </p>
                             <div>
                                 <input type="radio" id="po_1" name="presentation_options[]"

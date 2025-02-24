@@ -157,7 +157,7 @@
                             <p class=""><strong>Location</strong>: Saraburi, Lopburi and
                                 Kanchanaburi
                                 provinces</p>
-                            <p class=""><strong>Cost</strong>: 50 USD per day [including lunch and
+                            <p class=""><strong>Cost</strong>: 100 USD [including lunch and
                                 transportation]</p>
                         </div>
                         <div>
@@ -206,8 +206,8 @@
                                 <li>Early career researchers (PhD Candidates) and students from the Global South: USD
                                     150</li>
                             </ul>
-                            <p class=""><strong>3 - Field Trip</strong>: USD 50 for one day and USD 100
-                                for two days</p>
+                            <p class=""><strong>3 - Two-Day Field Trip</strong>: USD 100 (including food and
+                                transportation)</p>
                             <p class=""><strong>4 - Gala Dinner</strong>: USD 55 (including
                                 transportation from AIT)</p>
                         </div>
@@ -219,19 +219,19 @@
                                 <label for="po_1">Conference Only</label>
                             </div>
                             <div>
-                                <input type="radio" id="po_2" name="participation_option"
-                                    value="Conference + Tow Days Field Trip" required />
-                                <label for="po_2">Conference + Tow Days Field Trip</label>
-                            </div>
-                            <div>
                                 <input type="radio" id="po_3" name="participation_option"
                                     value="Conference + Gala Dinner" required />
                                 <label for="po_3">Conference + Gala Dinner</label>
                             </div>
                             <div>
+                                <input type="radio" id="po_2" name="participation_option"
+                                    value="Conference + Two-Day Field Trip" required />
+                                <label for="po_2">Conference + Two-Day Field Trip</label>
+                            </div>
+                            <div>
                                 <input type="radio" id="po_4" name="participation_option"
-                                    value="Conference + Tow Days Field Trip + Gala Dinner" required />
-                                <label for="po_4">Conference + Tow Days Field Trip + Gala Dinner</label>
+                                    value="Conference + Two-Day Field Trip + Gala Dinner" required />
+                                <label for="po_4">Conference + Two-Day Field Trip + Gala Dinner</label>
                             </div>
                         </div>
                         <div>
