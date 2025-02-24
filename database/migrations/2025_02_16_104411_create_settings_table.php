@@ -13,16 +13,17 @@ return new class extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->string('event_name');
-            $table->string('event_title');
-            $table->string('event_duration');
-            $table->string('event_location');
-            $table->string('event_deadline');
-            $table->string('contact_address');
-            $table->text('contact_map');
-            $table->string('contact_phone')->nullable();
-            $table->string('contact_mail')->nullable();
+            $table->string('name');
             $table->string('noti_email');
+            $table->string('logo')->nullable();
+            $table->json('countdown')->nullable();
+            $table->json('contact')->nullable();
+            $table->json('footer')->nullable();
+            $table->json('home')->nullable();
+            $table->json('conference')->nullable();
+            $table->json('committees')->nullable();
+            $table->json('abstract')->nullable();
+            $table->json('registration')->nullable();
             $table->timestamps();
         });
     }
