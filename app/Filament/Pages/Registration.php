@@ -22,6 +22,8 @@ class Registration extends Page implements HasForms
 
     protected static ?int $navigationSort = 9;
 
+    protected static bool $shouldRegisterNavigation = false;
+
     public ?array $data = [];
 
     public function mount(): void
