@@ -20,16 +20,9 @@
 
             <div class="flex flex-col md:flex-row gap-4">
                 <div class="basis-1 md:basis-1/3">
-                    <p>
-                        Each abstract should be no longer than <strong>250 words</strong> and must include <strong>6
-                            keywords</strong>. The conference
-                        will partner with Journal of Rural Studies, Elsevier and Research in Globalization,
-                        Elsevier to publish special issues featuring selected conference papers. The best abstracts will
-                        be invited to submit full
-                        papers for consideration in these special issues.
-                    </p>
+                    <x-paragraph :body="$data['body']" />
                     <h3 class="mt-4 font-bold">Submission Deadline</h3>
-                    <p>June 30, 2025</p>
+                    <p>{{ $deadline }}</p>
                 </div>
                 <div class="basis-1 md:basis-2/3">
                     <form method="POST" action="{{ route('submissions.store') }}" enctype="multipart/form-data"

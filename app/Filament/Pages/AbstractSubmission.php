@@ -4,7 +4,7 @@ namespace App\Filament\Pages;
 
 use App\Models\Setting;
 use Filament\Actions\Action;
-use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
@@ -33,9 +33,16 @@ class AbstractSubmission extends Page implements HasForms
     {
         return $form
             ->schema([
-                TextInput::make('name')
-                    ->required()
-                    ->maxLength(255),
+                RichEditor::make('abstract.body')
+                    ->disableToolbarButtons([
+                        'attachFiles',
+                        'blockquote',
+                        'codeBlock',
+                        'redo',
+                        'strike',
+                        'undo',
+                    ])
+                    ->required(),
             ])
             ->statePath('data');
     }

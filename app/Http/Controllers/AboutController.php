@@ -14,6 +14,6 @@ class AboutController extends Controller
     {
         $setting = Setting::firstOrFail();
 
-        return view('about', compact('setting'));
+        return view('about')->with('data', $setting->conference);
     }
 }

@@ -26,7 +26,7 @@
                 </h2>
                 <div class="mt-4 grid grid-cols-1 md:grid-cols-2 md:gap-4 w-full md:w-2/3">
                     <div class="bg-secondary-fade p-4 rounded-xl my-4 shadow-md w-full">
-                        <h3 class="font-bold text-lg">Oral/Poster Presentation Sessions</h3>
+                        <h3 class="font-bold text-lg">{{ $data['details']['presentation_title'] }}</h3>
                     </div>
                     <div class="relative flex items-center">
                         <div
@@ -39,13 +39,13 @@
                             </svg>
                         </div>
                         <div class="z-30 bg-secondary-fade p-4 rounded-full my-4 shadow-md w-full">
-                            <h3 class="font-bold text-lg text-center">5-6 November 2025</h3>
+                            <h3 class="font-bold text-lg text-center">{{ $data['details']['presentation_date'] }}</h3>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 w-full md:w-2/3">
                     <div class="bg-primary-fade p-4 rounded-xl my-4 shadow-md w-full">
-                        <h3 class="font-bold text-lg">Field Trip to Rural Thailand</h3>
+                        <h3 class="font-bold text-lg">{{ $data['details']['trip_title'] }}</h3>
                     </div>
                     <div class="relative flex items-center">
                         <div
@@ -58,26 +58,16 @@
                             </svg>
                         </div>
                         <div class="z-30 bg-primary-fade p-4 rounded-full my-4 shadow-md w-full">
-                            <h3 class="font-bold text-lg text-center">7-8 November 2025</h3>
+                            <h3 class="font-bold text-lg text-center">{{ $data['details']['trip_date'] }}</h3>
                         </div>
                     </div>
                 </div>
                 <div class="p-2 w-full md:w-2/3">
-                    <ul class="list-disc ml-4">
-                        <li>The field trip will be organized to provinces surrounding Bangkok, including Kanchanaburi,
-                            Saraburi, and
-                            Lopburi.</li>
-                        <li>The tentative itinerary includes visits to <strong>the Self-Sufficient Economy Agricultural
-                                Model,
-                                Organic PGS
-                                farming, Pasak Cholasid Dam and Wetland Management, community-based irrigation groups,
-                                and
-                                EcoSmart Farm
-                                Systems, Circular Farm Models.</strong></li>
+                    <x-paragraph :body="$data['details']['body']" />
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4 w-full md:w-2/3">
                     <div class="bg-gray-2 p-4 rounded-xl my-4 shadow-md w-full">
-                        <h3 class="font-bold text-lg">Gala dinner Chao Phraya Cruise</h3>
+                        <h3 class="font-bold text-lg">{{ $data['details']['dinner_title'] }}</h3>
                     </div>
                     <div class="relative flex items-center">
                         <div
@@ -90,7 +80,7 @@
                             </svg>
                         </div>
                         <div class="z-30 bg-gray-2 p-4 rounded-full my-4 shadow-md w-full">
-                            <h3 class="font-bold text-lg text-center">5 November 2025</h3>
+                            <h3 class="font-bold text-lg text-center">{{ $data['details']['dinner_date'] }}</h3>
                         </div>
                     </div>
                 </div>
@@ -102,38 +92,62 @@
                 <div class="grid grid-cols-1 gap-4">
                     <div class="flex gap-8 items-center">
                         <div class="w-16 h-16 p-2 text-center rounded-lg bg-primary-fade">
-                            <p class="font-semibold"><strong class="text-2xl">30</strong> June</p>
+                            <p class="font-semibold">
+                                <strong
+                                    class="text-2xl">{{ \Carbon\Carbon::parse($data['important']['abstract_deadline_date'])->format('d') }}</strong>
+                                {{ \Carbon\Carbon::parse($data['important']['abstract_deadline_date'])->format('M') }}
+                            </p>
                         </div>
                         <div>
-                            <p class="font-bold">Abstract Submission Deadline</p>
-                            <p class="">June 30, 2025</p>
+                            <p class="font-bold">{{ $data['important']['abstract_deadline_title'] }}</p>
+                            <p class="">
+                                {{ \Carbon\Carbon::parse($data['important']['abstract_deadline_date'])->toFormattedDateString() }}
+                            </p>
                         </div>
                     </div>
                     <div class="flex gap-8 items-center">
                         <div class="w-16 h-16 p-2 text-center rounded-lg bg-primary-fade">
-                            <p class="font-semibold"><strong class="text-2xl">28</strong> July</p>
+                            <p class="font-semibold">
+                                <strong
+                                    class="text-2xl">{{ \Carbon\Carbon::parse($data['important']['abstract_acceptance_date'])->format('d') }}</strong>
+                                {{ \Carbon\Carbon::parse($data['important']['abstract_acceptance_date'])->format('M') }}
+                            </p>
                         </div>
                         <div>
-                            <p class="font-bold">Abstract Acceptance Announcement</p>
-                            <p class="">July 28, 2025</p>
+                            <p class="font-bold">{{ $data['important']['abstract_acceptance_title'] }}</p>
+                            <p class="">
+                                {{ \Carbon\Carbon::parse($data['important']['abstract_acceptance_date'])->toFormattedDateString() }}
+                            </p>
                         </div>
                     </div>
                     <div class="mt-8 flex gap-8 items-center">
                         <div class="w-16 h-16 p-2 text-center rounded-lg bg-secondary-fade">
-                            <p class="font-semibold"><strong class="text-2xl">31</strong> July</p>
+                            <p class="font-semibold">
+                                <strong
+                                    class="text-2xl">{{ \Carbon\Carbon::parse($data['important']['earlybird_deadline_date'])->format('d') }}</strong>
+                                {{ \Carbon\Carbon::parse($data['important']['earlybird_deadline_date'])->format('M') }}
+                            </p>
                         </div>
                         <div>
-                            <p class="font-bold">Early Bird Registration Deadline</p>
-                            <p class="">July 31, 2025</p>
+                            <p class="font-bold">{{ $data['important']['earlybird_deadline_title'] }}</p>
+                            <p class="">
+                                {{ \Carbon\Carbon::parse($data['important']['earlybird_deadline_date'])->toFormattedDateString() }}
+                            </p>
                         </div>
                     </div>
                     <div class="flex gap-8 items-center">
                         <div class="w-16 h-16 p-2 text-center rounded-lg bg-secondary-fade">
-                            <p class="font-semibold"><strong class="text-2xl">15</strong> Sep</p>
+                            <p class="font-semibold">
+                                <strong
+                                    class="text-2xl">{{ \Carbon\Carbon::parse($data['important']['regular_deadline_date'])->format('d') }}</strong>
+                                {{ \Carbon\Carbon::parse($data['important']['regular_deadline_date'])->format('M') }}
+                            </p>
                         </div>
                         <div>
-                            <p class="font-bold">Regular Registration Deadline</p>
-                            <p class="">September 15, 2025</p>
+                            <p class="font-bold">{{ $data['important']['regular_deadline_title'] }}</p>
+                            <p class="">
+                                {{ \Carbon\Carbon::parse($data['important']['regular_deadline_date'])->toFormattedDateString() }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -151,7 +165,9 @@
                     <div class="flex flex-col gap-4">
                         <div class="bg-teal-300 p-2 rounded-xl w-full h-20 flex flex-col items-center justify-center">
                             <h3 class="font-bold text-lg">Early Bird</h3>
-                            <p class="">(Until July 31, 2025)</p>
+                            <p class="">(Until
+                                {{ \Carbon\Carbon::parse($data['important']['regular_deadline_date'])->toFormattedDateString() }})
+                            </p>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
@@ -163,84 +179,76 @@
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
                     <div class="md:col-span-2 flex flex-col gap-4">
                         <div class="bg-yellow-200 p-2 rounded-xl w-full flex items-center">
-                            <h3 class="pl-2">&bull; Academia/Policy Makers/ Practitioners</h3>
+                            <h3 class="pl-2">&bull; {{ $data['fee']['type_1_title'] }}</h3>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
                         <div class="bg-teal-200 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 300</h3>
+                            <h3 class="">{{ $data['fee']['type_1_earlybird'] }}</h3>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
                         <div class="bg-blue-200 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 350</h3>
+                            <h3 class="">{{ $data['fee']['type_1_regular'] }}</h3>
                         </div>
                     </div>
                 </div>
                 <div class="mb-4 grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
                     <div class="md:col-span-2 flex flex-col gap-4">
                         <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center">
-                            <h3 class="pl-4">&bull; Researchers from the Global South</h3>
+                            <h3 class="pl-4">&bull; {{ $data['fee']['type_2_title'] }}</h3>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
                         <div class="bg-teal-100 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 250</h3>
+                            <h3 class="">{{ $data['fee']['type_2_earlybird'] }}</h3>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
                         <div class="bg-blue-100 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 300</h3>
+                            <h3 class="">{{ $data['fee']['type_2_regular'] }}</h3>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
                     <div class="md:col-span-2 flex flex-col gap-4">
                         <div class="bg-yellow-200 p-2 rounded-xl w-full flex items-center">
-                            <h3 class="pl-2">&bull; Early career researchers (PhD Candidates) and students</h3>
+                            <h3 class="pl-2">&bull; {{ $data['fee']['type_3_title'] }}</h3>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
                         <div class="bg-teal-200 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 200</h3>
+                            <h3 class="">{{ $data['fee']['type_3_earlybird'] }}</h3>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
                         <div class="bg-blue-200 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 250</h3>
+                            <h3 class="">{{ $data['fee']['type_3_regular'] }}</h3>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
                     <div class="md:col-span-2 flex flex-col gap-4">
                         <div class="bg-yellow-100 p-2 rounded-xl w-full flex items-center">
-                            <h3 class="pl-4">&bull; Early career researchers (PhD Candidates) and students from the
-                                Global
-                                South</h3>
+                            <h3 class="pl-4">&bull; {{ $data['fee']['type_4_title'] }}</h3>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
                         <div class="bg-teal-100 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 150</h3>
+                            <h3 class="">{{ $data['fee']['type_4_earlybird'] }}</h3>
                         </div>
                     </div>
                     <div class="flex flex-col gap-4">
                         <div class="bg-blue-100 p-2 rounded-xl w-full flex items-center justify-center">
-                            <h3 class="">USD 200</h3>
+                            <h3 class="">{{ $data['fee']['type_4_regular'] }}</h3>
                         </div>
                     </div>
                 </div>
                 <div class="bg-gray-2 p-4 rounded-xl flex flex-col">
                     <h3 class="font-bold text-lg">Optional</h3>
-                    <ul class="list-disc ml-4">
-                        <li>Two-Day Field Trip - USD 100 (including food and transportation)</li>
-                        <li>Gala Dinner - USD 55 (including transportation)</li>
-                    </ul>
+                    <x-paragraph :body="$data['fee']['optional']" />
                 </div>
-                <p class="text-primary text-lg font-extrabold text-justify">*** The best abstracts submitted by
-                    early-stage
-                    researchers (e.g: Doctoral Students) from the Global South will be selected for an award of
-                    registration fee waiver ***</p>
+                <p class="text-primary text-lg font-extrabold text-justify">{{ $data['fee']['best_abstract'] }}</p>
             </div>
             <div class="my-10 flex flex-col gap-8">
                 <h2 class="heading-2">
@@ -248,16 +256,12 @@
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="flex flex-col gap-4">
-                        <p><strong>Robert B Banks Auditorium, Asian Institute of
-                                Technology (AIT CC)</strong></p>
-                        <p>58 Moo 9, Phahonyothin Rd, Khlong Nueng, Khlong Luang District, Pathum Thani 12120, Thailand
-                        </p>
+                        <p><strong>{{ $data['location']['title'] }}</strong></p>
+                        <p>{{ $data['location']['address'] }}</p>
                     </div>
                     <div>
-                        <iframe class="w-full h-[300px]"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4766.916176001432!2d100.6143444!3d14.078948100000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e27f8bf182c5cf%3A0xa51b43c33d385a98!2sAIT%20Conference%20Center!5e1!3m2!1sen!2ssg!4v1739505506720!5m2!1sen!2ssg"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="w-full h-[300px]" src="{{ $data['location']['map'] }}" style="border:0;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -269,46 +273,13 @@
                     <h3 class="text-xl font-extrabold leading-8">
                         Accommodation
                     </h3>
-                    <p>Participants are recommended to consider the following accommodations options where are easily
-                        accessible
-                        to Conference Location.</p>
-                    <div class="mt-2 grid grid-cols-1 gap-4">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-primary">1. AIT Conference Center</p>
-                            <p>Hotel and Dining Facility in AIT Campus [visit - <a
-                                    href="http://aitcc.ait.ac.th/accommodation/"
-                                    class="text-sm">http://aitcc.ait.ac.th/accommodation/</a>]</p>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <p class="text-primary">2. Pinehurst Golf Club and Hotel</p>
-                            <p>Around 6 km to AIT [visit - <a href="https://www.pinehurst.co.th/en/hotel"
-                                    class="text-sm">https://www.pinehurst.co.th/en/hotel</a>]
-                            </p>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <p class="text-primary">3. Novotel Bangkok Future Park Rangsit</p>
-                            <p>Around 12 km to AIT [visit - <a
-                                    href="https://novotelbangkokfutureparkrangsit.com/rooms-suites/"
-                                    class="text-sm">https://novotelbangkokfutureparkrangsit.com/rooms-suites/</a>]</p>
-                        </div>
-                    </div>
+                    <x-paragraph :body="$data['accommodation']" />
                 </div>
                 <div>
                     <h3 class="mt-4 text-xl font-extrabold leading-8">
                         Airport Transportation
                     </h3>
-                    <div class="mt-2 grid grid-cols-1 gap-4">
-                        <div class="flex flex-col gap-2">
-                            <p class="text-primary">1. Suvarnabhumi International Airport to AIT (around 60 km)</p>
-                            <p>Around 1 hr with city taxi (around USD25)</p>
-                            <p>No direct bus to campus</p>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <p class="text-primary">2. Don Mueang International Airport to AIT (around 23 km)</p>
-                            <p>Around 25 mins with city taxi (around USD15)</p>
-                            <p>Around 2 hrs with public transportation (Bus no - 510)</p>
-                        </div>
-                    </div>
+                    <x-paragraph :body="$data['transportation']" />
                 </div>
             </div>
         </div>
