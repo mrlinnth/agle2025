@@ -48,11 +48,7 @@ class HomePage extends Page implements HasForms
                             ->required()
                             ->maxLength(255),
                         FileUpload::make('home.banner.background_image')
-                            ->disk('local')
-                            ->directory('images')
-                            ->visibility('private')
-                            ->downloadable()
-                            ->deletable(false)
+                            ->disk('public')
                             ->required(),
                         TextInput::make('home.banner.duration')
                             ->required()

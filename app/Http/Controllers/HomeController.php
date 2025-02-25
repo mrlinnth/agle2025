@@ -14,6 +14,6 @@ class HomeController extends Controller
     {
         $setting = Setting::firstOrFail();
 
-        return view('home', compact('setting'));
+        return view('home')->with('data', $setting->home);
     }
 }
