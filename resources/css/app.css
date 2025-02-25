@@ -28,3 +28,6 @@ body {
 .heading-2 {
     @apply my-4 text-3xl font-extrabold;
 }
+.para ul {
+    @apply list-disc ml-4;
+}
