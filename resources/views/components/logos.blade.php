@@ -10,14 +10,14 @@
                 @foreach ($center_logos as $i)
                     <div>
                         <a class="" href="#" target="_blank" rel="nofollow noopner">
-                            <img src="{{ asset("storage/$i") }}" alt="partner logo" class="w-24" />
+                            <img src="{{ asset("storage/$i") }}" alt="partner logo" class="w-16" />
                         </a>
                     </div>
                 @endforeach
             </div>
             <div>
                 <a class="" href="#" target="_blank" rel="nofollow noopner">
-                    <img src="{{ asset("storage/$end_logo") }}" alt="ELsevier" class="w-36" />
+                    <img src="{{ asset("storage/$end_logo") }}" alt="ELsevier" class="w-28" />
                 </a>
             </div>
         </div>

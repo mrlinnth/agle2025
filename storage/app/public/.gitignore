@@ -6,3 +6,7 @@
 !end.*
 !logo.*
 !.gitignore
+!default/
+!default/*
+!default/prof/
+!default/prof/*

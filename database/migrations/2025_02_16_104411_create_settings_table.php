@@ -22,6 +22,7 @@ return new class extends Migration
             $table->json('home')->nullable();
             $table->json('conference')->nullable();
             $table->json('committees')->nullable();
+            $table->json('organizers')->nullable();
             $table->json('abstract')->nullable();
             $table->json('registration')->nullable();
             $table->timestamps();

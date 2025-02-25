@@ -4,6 +4,9 @@ namespace App\Filament\Pages;
 
 use App\Models\Setting;
 use Filament\Actions\Action;
+use Filament\Forms\Components\Fieldset;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
@@ -22,8 +25,6 @@ class Committees extends Page implements HasForms
 
     protected static ?int $navigationSort = 7;
 
-    protected static bool $shouldRegisterNavigation = false;
-
     public ?array $data = [];
 
     public function mount(): void
@@ -35,9 +36,26 @@ class Committees extends Page implements HasForms
     {
         return $form
             ->schema([
-                TextInput::make('name')
-                    ->required()
-                    ->maxLength(255),
+                    Repeater::make('committees')
+                    ->label('Scientific committee')
+                    ->schema([
+                        TextInput::make('name')->required(),
+                        TextInput::make('institute')->required(),
+                        FileUpload::make('photo')
+                        ->disk('public')
+                        ->required(),
+                    ])
+                    ->columns(3),
+                    Repeater::make('organizers')
+                    ->label('Conference organizers')
+                    ->schema([
+                        TextInput::make('name')->required(),
+                        TextInput::make('institute')->required(),
+                        FileUpload::make('photo')
+                        ->disk('public')
+                        ->required(),
+                    ])
+                    ->columns(3)
             ])
             ->statePath('data');
     }

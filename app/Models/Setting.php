@@ -17,6 +17,7 @@ class Setting extends Model
             'home' => 'array',
             'conference' => 'array',
             'committees' => 'array',
+            'organizers' => 'array',
             'abstract' => 'array',
             'registration' => 'array',
         ];

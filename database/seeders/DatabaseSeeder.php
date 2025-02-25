@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
         Setting::create([
             'name' => 'AGLE 2025',
             'noti_email' => 'ylt@evolxit.com',
-            'logo' => 'logo.jpeg',
+            'logo' => 'default/logo.jpeg',
             'countdown' => [
                 'date' => '2025-09-15',
                 'title' => 'Days to Registration',
@@ -44,11 +44,11 @@ class DatabaseSeeder extends Seeder
                 'address' => '58 Moo ​9, Phahonyothin Rd, Khlong Nueng, Khlong Luang District, Pathum Thani 12120',
             ],
             'footer' => [
-                'end_logo' => 'end.png',
+                'end_logo' => 'default/end.png',
                 'center_logos' => [
-                    'center_1.jpg',
-                    'center_2.png',
-                    'center_3.jpeg',
+                    'default/center_1.jpg',
+                    'default/center_2.png',
+                    'default/center_3.jpeg',
                 ],
             ],
             'home' => [
@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
                     'location' => 'Asian Institute of Technology Conference Center (AITCC), Thailand',
                     'main_title' => 'Technological Advancement and Social Innovation for Rural and Agricultural Resilience ',
                     'sub_heading' => 'Annual Conference 2025',
-                    'background_image' => 'banner.jpg',
+                    'background_image' => 'default/banner.jpg',
                 ],
                 'themes' => [
                     'body' => '<p>Abstract submissions, both oral and poster presentation sessions must be in English. Participants are encouraged to submit the research on one or more topics (but are not limited to these.)&nbsp;</p><ol><li>Land use and land management for Sustainable Development</li><li>Innovative Food Systems and Smart Agriculture</li><li>Sustainable Rural Environment and Natural Resources</li><li>Rural community resilience to environmental changes</li><li>Rural and agricultural heritage, socio-cultural conservation</li><li>Education, Technological and Social Innovation</li><li>Governance and Policy for Rural Inclusion and Sustainability</li></ol>',
@@ -120,6 +120,70 @@ class DatabaseSeeder extends Seeder
             'abstract' => [
                 'body' => '<p>Each abstract should be no longer than <strong>250 words</strong> and must include <strong>6 keywords</strong>. The conference will partner with Journal of Rural Studies, Elsevier and Research in Globalization, Elsevier to publish special issues featuring selected conference papers. The best abstracts will be invited to submit full papers for consideration in these special issues.&nbsp;</p>',
             ],
+            'committees' => [
+                [
+                    "name" => "Prof. Holly BARCUS",
+                    "institute" => "Macalester College, USA",
+                    "photo" => "default/prof/2.jpg",
+                ],
+                [
+                    "name" => "Prof. Avishek DATA",
+                    "institute" => "Asian Institute of Technology, Thailand",
+                    "photo" => "default/prof/7.jpg",
+                ],
+                [
+                    'name' => 'Prof. Barbaros GÖNENÇGIL',
+                    'institue' => 'Istanbul University, Turkey',
+                    'photo' => 'default/prof/1.jpg',
+                ],
+                [
+                    'name' => 'Prof. Yansui LIU',
+                    'institue' => 'Chinese Academy of Sciences, China',
+                    'photo' => 'default/prof/5.jpg',
+                ],
+                [
+                    'name' => 'Assoc. Prof. Yuheng LI',
+                    'institue' => 'Chinese Academy of Sciences, China',
+                    'photo' => 'default/prof/9.jpg',
+                ],
+                [
+                    'name' => 'Assoc. Prof. Thi Phuoc Lai NGUYEN',
+                    'institue' => 'Asian Institute of Technology, Thailand',
+                    'photo' => 'default/prof/8.jpg',
+                ],
+                [
+                    'name' => 'Prof. Guy, ROBINSON',
+                    'institue' => 'University of Adelaide, Australia',
+                    'photo' => 'default/prof/4.jpg',
+                ],
+                [
+                    'name' => 'Prof. Rajendra SHRESTHA',
+                    'institue' => 'Asian Institute of Technology, Thailand',
+                    'photo' => 'default/prof/6.jpg',
+                ],
+                [
+                    'name' => 'Prof. Darren SMITH',
+                    'institue' => 'Loughborough University, UK',
+                    'photo' => 'default/prof/3.jpg',
+                ],
+            ],
+            'organizers' => [
+                [
+                    "name" => "Assoc. Prof. Thi Phuoc Lai NGUYEN",
+                    "photo" => "default/prof/8.jpg",
+                    "institute" => "Asian Institute of Technology, Thailand",
+                ],
+                [
+                    "name" => "Prof. Guy, ROBINSON",
+                    "photo" => "default/prof/4.jpg",
+                    "institute" => "University of Adelaide, Australia",
+                ],
+                [
+                    "name" => "Assoc. Prof. Yuheng LI",
+                    "photo" => "default/prof/9.jpg",
+                    "institute" => "Chinese Academy of Sciences, China",
+                ],
+            ]
         ]);
     }
 }
