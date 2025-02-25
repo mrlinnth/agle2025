@@ -1,15 +1,3 @@
-@props([
-    'themes' => [
-        'Land use and land management for Sustainable Development',
-        'Innovative Food Systems and Smart Agriculture',
-        'Sustainable Rural Environment and Natural Resources',
-        'Rural community resilience to environmental changes',
-        'Rural and agricultural heritage, socio-cultural conservation',
-        'Education, Technological and Social Innovation',
-        'Governance and Policy for Rural Inclusion and Sustainability',
-    ],
-])
-
 <x-layout>
 
     <section id="home" class="relative h-screen overflow-hidden bg-cover bg-no-repeat pt-[100px]"
@@ -19,22 +7,25 @@
                 <div class="h-full grid grid-cols-1 gap-4 text-center md:text-left md:content-stretch">
                     <div>
                         <p class="md:text-xl font-extrabold">
-                            International Geographical Union (IGU) Commission on Agricultural Geography and Land
-                            Engineering (AGLE)
+                            {{ $setting->home['banner']['heading'] }}
                         </p>
-                        <p class="md:text-2xl font-extrabold">Annual Conference 2025</p>
+                        <p class="md:text-2xl font-extrabold">
+                            {{ $setting->home['banner']['sub_heading'] }}
+                        </p>
                     </div>
                     <div class="">
                         <p
                             class="text-3xl md:text-6xl font-extrabold text-primary-dark [text-shadow:_0_3px_5px_rgb(192_204_161_/_0.7)]">
-                            {{ $setting->event_title }}
+                            {{ $setting->home['banner']['main_title'] }}
                         </p>
                     </div>
                     <div class="pb-10">
                         <p class="md:text-xl font-extrabold">
-                            {{ $setting->event_duration }}
+                            {{ $setting->home['banner']['duration'] }}
                         </p>
-                        <p class="md:text-xl font-extrabold">{{ $setting->event_location }}</p>
+                        <p class="md:text-xl font-extrabold">
+                            {{ $setting->home['banner']['location'] }}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -42,44 +33,27 @@
     </section>
 
     <section class="bg-gray-1">
-        <div class="container py-20">
-            <h2 class="heading-2 sm:text-3xl sm:leading-9">
-                About The Conference
-            </h2>
-            <p class="my-4 text-base leading-relaxed text-body-color text-justify">
-                The 2025 AGLE conference on “Technological Advancement and Social Innovation for Rural and Agricultural
-                Resilience” will be held from 5-8 November 2025 in Bangkok, Thailand. The conference will include two
-                days of presentations and poster sessions and two days of
-                field trips to rural Thailand.<br /><br>
-                This scientific event aims to promote the convergence of scientific knowledge and practical actions to
-                advance
-                innovation, technological development, and applications for rural sustainability and resilience. The
-                conference
-                is organized by the IGU Commission on Agricultural Geography and Land Engineering (AGLE) in
-                collaboration with
-                the Asian Institute of Technology (AIT), Thailand.<br /><br>
-                The conference will feature high-level, inclusive, evidence-based discussions on the current challenges
-                and
-                priorities related to advancing innovation and technology for long-term rural sustainability, with a
-                focus on
-                contributing to the United Nations’ Sustainable Development Goals (SDGs). This event offers a valuable
-                opportunity for both early stage and established researchers and practitioners, to showcase their work,
-                exchange ideas, and engage with globally renowned experts in the field. It also provides a platform to
-                enhance
-                participants&#39; expertise and professional recognition in rural sustainability.
-                The conference fosters cooperation and strengthens collaborative efforts to address rural
-                challenges and promote sustainable development through innovative solutions.
-            </p>
+        <div class="container py-20 space-y-8">
+            <div>
+                <h2 class="heading-2">
+                    {{ $setting->home['about']['heading'] }}
+                </h2>
+                <x-paragraph :body="$setting->home['about']['body']" />
+            </div>
 
-            <x-theme />
+            <div>
+                <h2 class="heading-2">
+                    {{ $setting->home['themes']['heading'] }}
+                </h2>
+                <x-paragraph :body="$setting->home['themes']['body']" />
+            </div>
 
-            <h2 class="my-4 heading-2 sm:text-3xl sm:leading-9">
-                Publication Opportunities
-            </h2>
-            <p class="my-4 text-base leading-relaxed text-body-color text-justify">
-                The conference will partner with Journal of Rural Studies, Elsevier and Research in Globalization,
-                Elsevier to publish special issues featuring select conference papers. The best abstracts will be
-                invited to submit full papers for consideration in these special issues.</p>
+            <div>
+                <h2 class="heading-2">
+                    {{ $setting->home['publication']['heading'] }}
+                </h2>
+                <x-paragraph :body="$setting->home['publication']['body']" />
+            </div>
         </div>
     </section>
 

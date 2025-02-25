@@ -33,7 +33,7 @@
         <div class="flex h-24 items-center justify-between">
             <div class="md:flex md:items-center md:gap-12">
                 <a class="block" href="/">
-                    <img src="/assets/logo/agle-logo.jpeg" alt="logo" class="header-logo w-2/5" />
+                    <img src="{{ asset("storage/$logo") }}" alt="logo" class="header-logo w-2/5" />
                 </a>
             </div>
 

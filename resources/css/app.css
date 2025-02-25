@@ -26,5 +26,5 @@ body {
     visibility: hidden !important;
 }
 .heading-2 {
-    @apply mt-4 text-3xl font-extrabold leading-8;
+    @apply my-4 text-3xl font-extrabold;
 }

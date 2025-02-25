@@ -7,17 +7,17 @@
         <div class="container">
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <div class="">
-                    <iframe src="{{ $setting->contact_map }}" width="600" height="450" style="border:0;"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="{{ $contact['map'] }}" width="600" height="450" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="mt-4">
                         <p class="">
-                            <strong>Address:</strong> {{ $setting->contact_address }}
+                            <strong>Address:</strong> {{ $contact['address'] }}
                         </p>
                         <p class="">
-                            <strong>Phone:</strong> {{ $setting->contact_phone }}
+                            <strong>Phone:</strong> {{ $contact['phone'] }}
                         </p>
                         <p class="">
-                            <strong>Mail:</strong> {{ $setting->contact_mail }}
+                            <strong>Mail:</strong> {{ $contact['email'] }}
                         </p>
                     </div>
                 </div>

@@ -3,21 +3,21 @@
         <div class="flex flex-col md:flex-row gap-10 justify-between items-center">
             <div>
                 <a class="" href="/" target="_blank" rel="nofollow noopner">
-                    <img src="/assets/logo/agle-logo.jpeg" alt="AGLE" class="w-28" />
+                    <img src="{{ asset("storage/$logo") }}" alt="AGLE" class="w-28" />
                 </a>
             </div>
             <div class="flex flex-col md:flex-row gap-10 justify-center items-center">
-                @foreach ($clients as $client)
+                @foreach ($center_logos as $i)
                     <div>
-                        <a class="" href={{ $client['ref'] }} target="_blank" rel="nofollow noopner">
-                            <img src={{ $client['image'] }} alt={{ $client['name'] }} class="w-24" />
+                        <a class="" href="#" target="_blank" rel="nofollow noopner">
+                            <img src="{{ asset("storage/$i") }}" alt="partner logo" class="w-24" />
                         </a>
                     </div>
                 @endforeach
             </div>
             <div>
-                <a class="" href="/" target="_blank" rel="nofollow noopner">
-                    <img src="/assets/logo/elsevier-logo.png" alt="ELsevier" class="w-36" />
+                <a class="" href="#" target="_blank" rel="nofollow noopner">
+                    <img src="{{ asset("storage/$end_logo") }}" alt="ELsevier" class="w-36" />
                 </a>
             </div>
         </div>
