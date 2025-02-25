@@ -1,8 +1,8 @@
 *
-!banner.jpg
-!center_1.jpg
-!center_2.jpg
-!center_3.jpeg
-!end.png
-!logo.jpeg
+!banner.*
+!center_1.*
+!center_2.*
+!center_3.*
+!end.*
+!logo.*
 !.gitignore
