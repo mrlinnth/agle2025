@@ -19,15 +19,15 @@
         <div class="container">
             <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-2 text-center">
                 <div>
-                    <h2 class="text-lg">Early Bird Registration Deadline</h2>
+                    <h2 class="text-lg">{{ $earlybird_title }}</h2>
                     <p class="text-lg font-extrabold text-primary">
-                        July 31, 2025
+                        {{ $earlybird_date }}
                     </p>
                 </div>
                 <div>
-                    <h2 class="text-lg">Registration Deadline</h2>
+                    <h2 class="text-lg">{{ $regular_title }}</h2>
                     <p class="text-lg font-extrabold text-primary">
-                        September 15, 2025
+                        {{ $regular_date }}
                     </p>
                 </div>
             </div>
@@ -41,42 +41,11 @@
                     <h2 class="mb-4 text-3xl font-bold">
                         Payment Instructions
                     </h2>
-                    <div>
-                        <h2 class="mb-2 font-bold">Transfer from Overseas</h2>
-                        <p>Payment for registration fee can be transfer from overseas through the AIT Current Account
-                            (A/C) details below:</p>
-                        <ol class="ml-4 list-disc">
-                            <li>Thai Bhat Account: Siam Commercial Bank, Thammasat University Hospital Branch</li>
-                            <li>Name of A/C: ASIAN INSTITUTE OF TECHNOLOGY</li>
-                            <li>Current A/C # 468-046301-2</li>
-                            <li>Address: 95 Moo 8, Kiong Nueng, Kiong Luang, Pathumthani 12120 Thailand</li>
-                            <li>Swift Code: SICOTHBK</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <h2 class="mb-2 font-bold">Transfer in Thailand</h2>
-                        <p>Payment for registration fee can be transfer in Thailand through the AIT Saving Account
-                            (A/C) details below:</p>
-                        <ol class="ml-4 list-disc">
-                            <li>Thai Bhat Account: Siam Commercial Bank, Thammasat University Hospital Branch</li>
-                            <li>Name of A/C: ASIAN INSTITUTE OF TECHNOLOGY</li>
-                            <li>Current A/C # 405-999567-0</li>
-                            <li>Address: 95 Moo 8, Kiong Nueng, Kiong Luang, Pathumthani 12120 Thailand</li>
-                            <li>Swift Code: SICOTHBK</li>
-                        </ol>
-                    </div>
-                    <p class="text-red-500">*** Please write the payment note: <strong class="font-bold">"Payment for
-                            AGLE
-                            Conference (2025)"</strong> when
-                        transferring the fees. ***
-                    </p>
+                    <x-paragraph :body="$data['body']" />
+                    <p class="text-red-500">{{ $data['note'] }}</p>
                     <div>
                         <h2 class="mb-2 font-bold">Cancellation Policy</h2>
-                        <p>
-                            All fees are non-refundable if a registrant is unable to attend the conference, the field
-                            trip and gala dinner for any reason. We appreciate your understanding of this policy, which
-                            helps us maintain the overall success of the event.
-                        </p>
+                        <x-paragraph :body="$data['policy']" />
                     </div>
                 </div>
 

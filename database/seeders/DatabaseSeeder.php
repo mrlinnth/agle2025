@@ -183,7 +183,12 @@ class DatabaseSeeder extends Seeder
                     "photo" => "default/prof/9.jpg",
                     "institute" => "Chinese Academy of Sciences, China",
                 ],
-            ]
+            ],
+            'registration' => [
+                'body' => '<h2>Transfer from Overseas</h2><p>Payment for registration fee can be transfer from overseas through the AIT Current Account (A/C) details below:</p><ol><li>Thai Bhat Account: Siam Commercial Bank, Thammasat University Hospital Branch</li><li>Name of A/C: ASIAN INSTITUTE OF TECHNOLOGY</li><li>Current A/C # 468-046301-2</li><li>Address: 95 Moo 8, Kiong Nueng, Kiong Luang, Pathumthani 12120 Thailand</li><li>Swift Code: SICOTHBK</li></ol><h2>Transfer in Thailand</h2><p>Payment for registration fee can be transfer in Thailand through the AIT Saving Account (A/C) details below:</p><ol><li>Thai Bhat Account: Siam Commercial Bank, Thammasat University Hospital Branch</li><li>Name of A/C: ASIAN INSTITUTE OF TECHNOLOGY</li><li>Current A/C # 405-999567-0</li><li>Address: 95 Moo 8, Kiong Nueng, Kiong Luang, Pathumthani 12120 Thailand</li><li>Swift Code: SICOTHBK</li></ol><p><br></p>',
+                'note' => '*** Please write the payment note: "Payment for AGLE Conference (2025)" when transferring the fees. *** ',
+                'policy' => 'All fees are non-refundable if a registrant is unable to attend the conference, the field trip and gala dinner for any reason. We appreciate your understanding of this policy, which helps us maintain the overall success of the event.',
+            ],
         ]);
     }
 }

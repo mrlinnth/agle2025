@@ -4,6 +4,7 @@ namespace App\Filament\Pages;
 
 use App\Models\Setting;
 use Filament\Actions\Action;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
@@ -22,8 +23,6 @@ class Registration extends Page implements HasForms
 
     protected static ?int $navigationSort = 9;
 
-    protected static bool $shouldRegisterNavigation = false;
-
     public ?array $data = [];
 
     public function mount(): void
@@ -35,9 +34,29 @@ class Registration extends Page implements HasForms
     {
         return $form
             ->schema([
-                TextInput::make('name')
+                RichEditor::make('registration.body')
+                    ->disableToolbarButtons([
+                        'attachFiles',
+                        'blockquote',
+                        'codeBlock',
+                        'redo',
+                        'strike',
+                        'undo',
+                    ])
+                    ->required(),
+                TextInput::make('registration.note')
                     ->required()
                     ->maxLength(255),
+                RichEditor::make('registration.policy')
+                    ->disableToolbarButtons([
+                        'attachFiles',
+                        'blockquote',
+                        'codeBlock',
+                        'redo',
+                        'strike',
+                        'undo',
+                    ])
+                    ->required(),
             ])
             ->statePath('data');
     }

@@ -29,7 +29,7 @@
     </section>
     <section class="py-20">
         <div class="container">
-            <h2 class="mb-5 text-3xl font-bold leading-tight sm:text-[40px] sm:leading-[1.2]">
+            <h2 class="mb-2 text-3xl font-bold leading-tight sm:text-[40px] sm:leading-[1.2]">
                 Conference Organizers
             </h2>
             <div class="-mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
