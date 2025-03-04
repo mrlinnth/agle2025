@@ -1,0 +1,12 @@
+*
+!banner.*
+!center_1.*
+!center_2.*
+!center_3.*
+!end.*
+!logo.*
+!.gitignore
+!default/
+!default/*
+!default/prof/
+!default/prof/*
