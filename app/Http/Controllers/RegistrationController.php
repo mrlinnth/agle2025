@@ -6,6 +6,7 @@ use App\Http\Requests\StoreRegistrationRequest;
 use App\Http\Requests\UpdateRegistrationRequest;
 use App\Mail\NewRegistration;
 use App\Models\Registration;
+use App\Models\Setting;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
@@ -34,7 +35,9 @@ class RegistrationController extends Controller
         $data = array_merge($request->safe()->except(['upload', 'g-recaptcha-response']), ['payment' => $path, 'reference' => uniqid()]);
         $registration = Registration::create($data);
         if (config('app.env') === 'production') {
-            Mail::to(config('mail.noti_address'))->send(new NewRegistration(($registration)));
+            $setting = Setting::first();
+            $email = $setting->noti_email ?? config('mail.noti_address');
+            Mail::to($email)->send(new NewRegistration(($registration)));
         }
 
         return redirect()->route('registrations.show', ['reference' => $registration->reference]);
