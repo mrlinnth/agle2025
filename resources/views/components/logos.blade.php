@@ -15,11 +15,6 @@
                     </div>
                 @endforeach
             </div>
-            <div>
-                <a class="" href="#" target="_blank" rel="nofollow noopner">
-                    <img src="{{ asset("storage/$end_logo") }}" alt="ELsevier" class="w-28" />
-                </a>
-            </div>
         </div>
     </div>
 </section>

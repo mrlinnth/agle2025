@@ -78,13 +78,11 @@ class Settings extends Page implements HasForms
                 Fieldset::make('Footer')
                     ->schema([
                         FileUpload::make('footer.center_logos')
+                            ->label('Logos')
                             ->disk('public')
                             ->multiple()
                             ->reorderable()
                             ->appendFiles()
-                            ->required(),
-                        FileUpload::make('footer.end_logo')
-                            ->disk('public')
                             ->required(),
                     ])
                     ->columns(2),
