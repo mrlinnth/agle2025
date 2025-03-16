@@ -20,9 +20,9 @@
 
             <div class="flex flex-col md:flex-row gap-4">
                 <div class="basis-1 md:basis-1/3">
+                    <h2 class="mt-4 font-bold">Submission Deadline</h2>
+                    <p class="text-lg font-extrabold text-primary">{{ $deadline }}</p>
                     <x-paragraph :body="$data['body']" />
-                    <h3 class="mt-4 font-bold">Submission Deadline</h3>
-                    <p>{{ $deadline }}</p>
                 </div>
                 <div class="basis-1 md:basis-2/3">
                     <form method="POST" action="{{ route('submissions.store') }}" enctype="multipart/form-data"
